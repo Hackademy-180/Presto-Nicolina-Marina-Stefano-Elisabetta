@@ -6,5 +6,11 @@ use Illuminate\Http\Request;
 
 class ArticleController extends Controller
 {
-    //
+    
+
+public function article_index(){
+    return view ('articles.index');
+    }
+
+
 }
