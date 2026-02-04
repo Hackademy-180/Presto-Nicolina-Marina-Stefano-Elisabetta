@@ -1,0 +1,12 @@
+.btn-navbar{
+    background: #ffa3a985;
+    border: 1px solid transparent;
+    color:red;
+    border-radius:20px;
+    height:40px;
+    transition: all 0.2s ease;
+}
+.btn-navbar:hover{
+    border:1px solid red;
+}
+
