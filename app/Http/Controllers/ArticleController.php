@@ -31,7 +31,7 @@ public function byCategory(Category $category){
 }
 
 
-public function article_show(){
+public function article_show(Article $article){
     return view('articles.show', compact('article'));
 }
 
