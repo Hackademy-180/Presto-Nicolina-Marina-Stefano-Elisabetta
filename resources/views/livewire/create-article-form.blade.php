@@ -1,5 +1,10 @@
 <div>
-  <form>
+     @if (session('status'))
+        <div class="alert alert-success">
+            {{ session('status') }}
+        </div>
+    @endif
+  <form class="bg-body-tertiary shadow rounded p-5 my-5" wire:submit="save">
     <div class="mb-3 mt-5">
       <label for="title" class="form-label">Titolo:</label>
       <input type="text" class="form-control @error('title') is-invalid @enderror" id="title" wire:model="title">

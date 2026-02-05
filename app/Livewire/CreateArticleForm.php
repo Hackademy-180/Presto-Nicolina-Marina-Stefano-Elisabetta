@@ -31,7 +31,10 @@ class CreateArticleForm extends Component
             'user_id' => Auth::id(),
         ]);
 
-        session()->flash('message', 'Articolo creato con successo!');
+        $this->reset();
+        
+        session()->flash("status", "Articolo caricato con successo!");
+
     }
 
 
