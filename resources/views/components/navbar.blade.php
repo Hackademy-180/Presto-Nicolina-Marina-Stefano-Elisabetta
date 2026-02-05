@@ -32,6 +32,9 @@
                             <i class="fa-solid fa-plus" style="color: #ff0000;"></i> Inserisci annuncio
                         </a>
                     </li>
+                    <li>
+                        <a class="nav-link" aria-current="page" href="{{route('article_index')}}">Tutti gli articoli</a>
+                    </li>
                     <form action="{{route('logout')}}" method="POST" class="text-center">
                         @csrf
                         <button class="btn" type="submit"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</button>
