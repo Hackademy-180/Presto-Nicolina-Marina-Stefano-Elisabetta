@@ -10,15 +10,15 @@
             <span class="topbar-link">Preferiti</span>
         </div>
         <div class="d-flex w-100 border-bottom border-1 secondLine">
-            <div class="w-100">
-                <a href="" class="logo text-decoration-none text-danger">Presto.it</a>
+            <div class="box-nav">
+                <a href="" class="logo text-decoration-none text-danger ms-4"><img src="./media/logo.png" alt="" class="logoPresto"></a>
             </div>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse w-100" id="navbarNavDropdown">
+            <div class="collapse navbar-collapse w-100 d-flex justify-content-end me-4" id="navbarNavDropdown">
                 <ul class="navbar-nav  gap-4">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{{route('home')}}">Home</a>

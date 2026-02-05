@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer class="bg-body-tertiary text-center">
+<footer class="bg-body-tertiary text-center mt-5 ">
   <!-- Grid container -->
   <div class="container p-4">
     <!-- Section: Social media -->
@@ -89,8 +89,6 @@
       <div class="row">
         <!--Grid column-->
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Links</h5>
-
           <ul class="list-unstyled mb-0">
             <li>
               <a class="text-body" href="#!">Assistenza</a>
@@ -110,8 +108,6 @@
 
         <!--Grid column-->
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Links</h5>
-
           <ul class="list-unstyled mb-0">
             <li>
               <a class="text-body" href="#!">Privacy</a>
@@ -131,20 +127,18 @@
 
         <!--Grid column-->
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Links</h5>
-
           <ul class="list-unstyled mb-0">
             <li>
-              <a class="text-body" href="#!">Link 1</a>
+              <a class="text-body" href="#!">TuttoSubito Compra</a>
             </li>
             <li>
-              <a class="text-body" href="#!">Link 2</a>
+              <a class="text-body" href="#!">Servizio TuttoSubito</a>
             </li>
             <li>
-              <a class="text-body" href="#!">Link 3</a>
+              <a class="text-body" href="#!">Servizio TuttoSubito per Professionisti</a>
             </li>
             <li>
-              <a class="text-body" href="#!">Link 4</a>
+              <a class="text-body" href="#!">Inserisci annuncio</a>
             </li>
           </ul>
         </div>
@@ -152,20 +146,18 @@
 
         <!--Grid column-->
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Links</h5>
-
           <ul class="list-unstyled mb-0">
             <li>
-              <a class="text-body" href="#!">Link 1</a>
+              <a class="text-body" href="#!">Promuovi annuncio</a>
             </li>
             <li>
-              <a class="text-body" href="#!">Link 2</a>
+              <a class="text-body" href="#!">Consigli per la vendita</a>
             </li>
             <li>
-              <a class="text-body" href="#!">Link 3</a>
+              <a class="text-body" href="#!">Negozi e Aziende</a>
             </li>
             <li>
-              <a class="text-body" href="#!">Link 4</a>
+              <a class="text-body" href="#!">Subito per le aziende</a>
             </li>
           </ul>
         </div>
@@ -186,19 +178,3 @@
 </footer>
 <!-- Footer -->
 
-
-Regole
-Sicurezza
-Condizioni
-Privacy
-Accessibilità
-Gestisci cookies
-TuttoSubito Vendi
-TuttoSubito Compra
-Servizio TuttoSubito
-Servizio TuttoSubito per Professionisti
-Inserisci annuncio
-Promuovi annuncio
-Consigli per la vendita
-Negozi e Aziende
-Subito per le aziende

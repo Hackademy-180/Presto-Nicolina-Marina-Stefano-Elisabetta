@@ -1,3 +1,7 @@
+.logoPresto{
+    width:100%;
+}
+
 .firstLine{
     padding: 4px;
 }
@@ -51,3 +55,77 @@
     border:none;
     height:40px;
 }
+/* Header */
+.row-home{
+    height: 20vh;
+}
+.headerForm{
+    border:1px solid #f3f1f1;
+    border-radius:5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+/* First Section */
+
+.firstSection{
+    height:15vh;
+}
+
+.imgFirstSection{
+    width:50%;
+    margin-left:15px;
+}
+.iconDiv{
+    border:1px solid transparent;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    margin-right:100px;
+}
+.iconBorder{
+    height:80px;
+    border: 1px solid #d3d3d370;
+    border-radius:10px;
+}
+.transport{
+    background: #e9edff;
+}
+.titleTransport{
+    color: rgba(22, 18, 255);
+}
+.armchair{
+    background: #fdf6e5;
+}
+.titleArmchair{
+    color:#f2a700;
+}
+.building{
+    background: #f4e9ff;
+}
+.titleBuilding{
+    color:#9924ff;
+}
+.briefcase{
+    background: #e6f8f5;
+}
+.titleBriefcase{
+    color:#07bb9c;
+}
+/* Card Section home */
+
+
+/* Info Card */
+.categoryBtn{
+    border: 1px solid #d3d3d3;
+    border-radius:5px;
+    min-width:30%;
+    height:36px;
+    padding:5px;
+    transition: all 0.2s ease;
+}
+.categoryBtn:hover{
+    border: 2px solid rgb(97, 145, 248);
+}
+.detailBtn{
+    background-color: #f9423a;
+}
+
