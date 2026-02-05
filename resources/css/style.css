@@ -34,3 +34,18 @@
     border:1px solid red;
 }
 
+.box-buttons{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 24px;
+    
+}
+.form-button{
+    
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: #f9423a;
+    border-radius: 25px;
+}
