@@ -11,9 +11,9 @@
         <section class="row wh-75 justify-content-end align-items-center login-row">
             <article class="col-12 col-lg-4 login-article d-flex">
                 <div class="login-card p-4">
-                    <h1 class="text-center">Accedi su Presto</h1>
+                    <h5 class="text-center"><strong>Accedi su Presto</strong></h5>
                     <p class="text-center">
-                        Compra e vendi in una community con oltre 13 milioni di utenti.
+                        Compra e vendi in una community con oltre 10 milioni di utenti.
                     </p>
                     <form method="POST" action="{{route('login')}}">
                         @csrf
