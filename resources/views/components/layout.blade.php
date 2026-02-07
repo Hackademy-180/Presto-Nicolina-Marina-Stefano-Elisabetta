@@ -14,7 +14,7 @@
 
     <x-navbar />
 
-    <div class="min-vh-100">
+    <div class="main-container flex-1">
 
         {{$slot}}
     </div>

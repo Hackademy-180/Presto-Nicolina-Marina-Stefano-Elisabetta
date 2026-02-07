@@ -1,3 +1,8 @@
+/* .main-container{
+    display: flex;
+    justify-content: center;
+} */
+
 .logoPresto{
     width:100%;
 }
@@ -220,4 +225,35 @@
     flex-shrink: 0;
     justify-content: center;
     display: flex;
+}
+
+/* Tutti gli articoli */
+.no-item-container{
+    justify-content: center;
+    align-items: center;
+    min-height: 360px;
+    padding: 40px 12px;
+    background-color: #f7f8fb;
+}
+.no-item-icon {
+    width: 240px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+}
+a.form-button{
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    padding: 0 20px;
+}
+.your-articles-container{
+    flex: unset;
+}
+
+@media (max-width: 768px) {
+    .no-item-container {
+        display: flex;
+        justify-content: center;
+    }
 }

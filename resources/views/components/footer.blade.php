@@ -175,7 +175,7 @@
     
     <div class="box-nav mb-2">
         <a href="" class="logo text-decoration-none text-danger">
-            <img src="./media/logo_bw.png" alt="" class="logo-footer img-fluid">
+            <img src="{{ asset('media/logo_bw.png') }}" alt="" class="logo-footer img-fluid">
         </a>
     </div>
 

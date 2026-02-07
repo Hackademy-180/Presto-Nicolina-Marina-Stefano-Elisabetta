@@ -1,36 +1,49 @@
 <x-layout>
-<div class="container-fluid">
-<div class="row height-custum justify-content-center align-items-center text-center">
-
-<div class="col-12">
-    <h1 class="display-1 mt-5"> Tutti gli articoli</h1>
-
-</div>
-
-</div>
-<div class="row height-custum justify-content-center align-items-center text-center mt-5">
-@forelse ($articles as $article)
-<div class="col-12 col-md-3">
-    <x-card :article="$article"/>
-</div>
-@empty
-<div class="col-12">
-    <h3 class="text-center">
-        non sono ancora stati creati articoli
-    </h3>
+    <div class="container-fluid your-articles-container">
+        <div class="row height-custum justify-content-center align-items-center m-0">
+            
+            <div class="col-12 mt-3 ps-1">
+                <h3 class="text-right"> <strong>I tuoi annunci</strong></h3>
+                
+            </div>
+            
+        </div>
+        <div class="row height-custum justify-content-center align-items-center text-center mt-2">
+            @forelse ($articles as $article)
+            <div class="col-12 col-md-3">
+                <x-card :article="$article"/>
+            </div>
+            @empty
+            <div class="row no-item-container mx-0">
+                <div class="col-12 text-center">
+                    <img src="{{ asset('media/no-articles-icon.svg') }}" alt="" class="no-item-icon">
+                </div>
+                
+                <div class="col-12">
+                    <h6 class="text-center">
+                        <strong>Non hai annunci online</strong>
+                    </h6>
+                    <p class="text-center">
+                        Comincia a vendere. Ci guadagni tu e ci guadagna anche il pianeta.
+                    </p>
+                    <div class="col-auto box-buttons">
+                    <a href="{{route('article_create')}}" class="mb-5 form-button">Inserisci annuncio</a>
+                    </div>
+                </div>
+            </div>
+            
+            @endforelse
+            
+        </div>
+        
+        
     </div>
-    @endforelse
-
-</div>
-
-
-</div>
-
-<div class="d-flex justify-content-center">
-    <div>
-        {{$articles->links()}}
+    
+    <div class="d-flex justify-content-center">
+        <div>
+            {{$articles->links()}}
+        </div>
+        
     </div>
-
-</div>
-
+    
 </x-layout>
