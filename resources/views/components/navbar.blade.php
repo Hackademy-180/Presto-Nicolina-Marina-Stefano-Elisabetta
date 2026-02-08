@@ -11,7 +11,7 @@
         </div>
         <div class="d-flex w-100 border-bottom border-1 secondLine">
             <div class="box-nav">
-                <a href="" class="logo text-decoration-none text-danger ms-4"><img src="./media/logo.png" alt="" class="logoPresto"></a>
+                <a href="{{route('home')}}" class="logo text-decoration-none text-danger ms-4"><img src="./media/logo.png" alt="" class="logoPresto"></a>
             </div>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
