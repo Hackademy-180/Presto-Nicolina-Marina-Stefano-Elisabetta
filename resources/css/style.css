@@ -254,3 +254,17 @@ a.form-button{
         justify-content: center;
     }
 }
+
+.create-article-form {
+    min-width: 500px;
+    /* background-color: #e9c460; */
+    background-color: #e6b431;
+}
+
+@media (max-width: 997px) {
+    .create-article-form {
+    width: 100vw;
+    background-color: white;
+}
+}
+
