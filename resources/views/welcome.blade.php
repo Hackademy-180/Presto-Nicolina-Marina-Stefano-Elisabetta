@@ -11,13 +11,13 @@
     <header class="container-fluid text-center">
         <div class="row row-home ">
             <form action="{{route("article.search")}}" method="GET">
-                <div class="d-flex justify-content-center mt-5 h-75">
-                    <div class="col-12 col-md-6 headerForm d-flex justify-content-center align-items-center gap-">
-                        <div class="d-flex flex-column align-items-center w-25">
+                <div class="d-flex inputSearch justify-content-center mt-5 h-75">
+                    <div class="col-12 col-md-6 headerForm d-flex justify-content-center align-items-center">
+                        <div class="d-flex flex-column align-items-center ">
                             <p class="fw-bold m-0">Cosa cerchi?</p>
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="query" />
+                            <input class="form-control me-2 searchBar" type="search" placeholder="Search" aria-label="Search" name="query" />
                         </div>
-                        <div class="d-flex flex-column align-items-center w-25 ">
+                        <div class="d-none d-lg-flex flex-column align-items-center w-25 ">
                             <p class="fw-bold m-0">In quale categoria?</p>
                             <div class="d-flex justify-content-center">
                                 <button class="btnCategory" id="filterBtn" type="button"
@@ -41,7 +41,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex flex-column align-items-center w-25">
+                        <div class="d-none d-lg-flex flex-column align-items-center w-25">
                             <p class="fw-bold m-0">Dove?</p>
                             <input class="form-control me-2" type="search" placeholder="Tutta Italia" aria-label="Search"  name="location"/>
                         </div>
@@ -56,7 +56,7 @@
     <section class="container">
         <div class="row firstSection align-items-center mx-auto w-75">
             <div class="col-12 d-flex justify-content-around mt-5 gap-3">
-                <div class="iconTransport  w-25 d-flex justify-content-center align-items-center">
+                <div class="iconTransport w-25 d-flex justify-content-center align-items-center">
                     <div class="iconDiv d-flex align-items-center justify-content-around gap-5 transport">
                         <img src="./media/transport.png" alt="car" class="imgFirstSection">
                         <h5 class="titleTransport fw-bold">Motori</h5>

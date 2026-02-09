@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid d-flex flex-column p-0">
-        <div class="d-flex gap-4 justify-content-center w-100 border-bottom border-1 firstLine">
+        <div class="d-none d-lg-flex  gap-4 justify-content-center w-100 border-bottom border-1 firstLine">
             <span class="topbar-link">Magazine</span>
             <span class="topbar-link">Consigli per la vendita</span>
             <span class="topbar-link">Negozi e Aziende</span>
@@ -18,13 +18,13 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse w-100 d-flex justify-content-end me-4" id="navbarNavDropdown">
-                <ul class="navbar-nav  gap-4">
+            <div class="collapse navbar-collapse w-100 d-flex justify-content-end me-4 navbarDrop" id="navbarNavDropdown">
+                <ul class="navbar-nav d-lg-flex flex-row gap-4">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{{route('home')}}">Home</a>
                     </li>
                     @auth
-                    {{-- inizio collegamento area revisore --}}
+                    <!-- inizio collegamento area revisore -->
                     @if(Auth::user()->is_revisor)
                     <li class="nav-item">
                         <a href="{{route("revisor.index")}}" class="nav-link btn btn-outline-success btn-sm position-relative w-sm-25">Zona revisore
@@ -34,7 +34,7 @@
                         </a>
                     </li>
                     @endif
-                    {{-- fine collegamento area revisore --}}
+                    <!-- fine collegamento area revisore -->
                     <li class="nav-item">
                         <a class="nav-link active fw-bold" href="">Benvenut* {{Auth::user()->name}}</a>
                     </li>
@@ -45,19 +45,6 @@
                     </li>
                     <li>
                         <a class="nav-link" aria-current="page" href="{{route('article_index')}}">Tutti gli articoli</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorie</a>
-                        <ul class="dropdown-menu">
-                            @foreach($categories as $category)
-                            <li>
-                                <a href="" class="dropdown-item text-capitalize">{{$category->name}}</a>
-                            </li>
-                            @if (!$loop->last)
-                            <hr class="dropdown-divider">
-                            @endif
-                            @endforeach
-                        </ul>
                     </li>
                     <form action="{{route('logout')}}" method="POST" class="text-center">
                         @csrf
@@ -73,20 +60,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Lavora con noi</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorie</a>
-                        <ul class="dropdown-menu">
-                            @foreach($categories as $category)
-                            <li>
-                                <a href="{{route("byCategory", ["category" => $category])}}" class="dropdown-item text-capitalize">{{$category->name}}</a>
-                            </li>
-                            @if (!$loop->last)
-                            <hr class="dropdown-divider">
-                            @endif
-                            @endforeach
-                        </ul>
-                    </li>
-
                     @endauth
                 </ul>
             </div>

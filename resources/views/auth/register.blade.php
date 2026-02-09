@@ -1,8 +1,8 @@
 <x-layout>
     
     <main class="container">
-        <section class="row wh-75 justify-content-center">
-            <article class="col-12 col-md-6 me-5 mt-5">
+        <section class="row wh-75 justify-content-center ">
+            <article class="col-12 col-md-6 me-5 mt-5 registerSection">
                 <h5 class="text-left"><strong>Registrati</strong></h5>
                 <p class="text-left">
                     Crea il tuo account per iniziare a vendere e comprare in tutta Italia.  

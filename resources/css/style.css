@@ -1,3 +1,7 @@
+.navbar {
+    --mdb-navbar-box-shadow: none;
+    box-shadow: none !important;
+}
 .logoPresto{
     width:100%;
 }
@@ -61,6 +65,24 @@
     background-color: #f9423a;
     opacity: 0.8;
 }
+@media  screen and (max-width:768px){
+.secondLine{
+    flex-direction: column;
+}
+.logoPresto{
+    width: 80%;
+}
+.box-nav{
+    display: flex;
+    justify-content: center;
+}
+.navbarDrop, .navbar-nav{
+    
+   margin-right:26px;
+}
+}
+
+
 
 /* Header */
 .row-home{
@@ -105,6 +127,13 @@
     border:1px solid #e4e0e0;
     height: 36px;
     border-radius: 5px;
+}
+/* Media query */
+@media  screen and (max-width:768px){
+.inputSearch{ 
+    width:90vw;
+}
+
 }
 
 /* First Section */
@@ -182,6 +211,23 @@
 .titleBriefcase{
     color:#07bb9c;
 }
+
+/* Media query */
+@media  screen and (max-width:768px){
+.iconDiv{
+    flex-direction: column;
+    margin-left:30px;
+}
+.iconTransport, .iconArmchair, .iconBuilding, .iconBriefcase{
+    border:none;
+}
+.imgFirstSection{
+    margin-right:15px;
+    margin-top:15px;
+}
+}
+
+
 /* Card Section home */
 
 
@@ -212,10 +258,6 @@
 .logo-footer {
     max-width: 140px;
     height: auto;
-}
-.navbar {
-    --mdb-navbar-box-shadow: none;
-    box-shadow: none !important;
 }
 
 /* LOGIN */
@@ -260,6 +302,9 @@
 
 
 @media (max-width: 995px) {
+    .login-article{
+        height:70vh;
+    }
     .login-wrapper {
         background-image: none !important;
     }
@@ -267,6 +312,7 @@
         margin-right: 0;
         max-width: 100%;
         justify-content: center;
+       
     }
     .login-card {
         border-radius: 0;
@@ -294,6 +340,12 @@
     flex-shrink: 0;
     justify-content: center;
     display: flex;
+}
+/* Media query */
+@media  screen and (max-width:768px){
+.registerSection{
+    margin-left:50px;
+}
 }
 
 /* Tutti gli articoli */
