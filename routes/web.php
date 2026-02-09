@@ -1,9 +1,10 @@
 <?php
 
-use App\Http\Controllers\ArticleController;
+use App\Models\Article;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PublicController;
-use App\Models\Article;
+use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\RevisorController;
 
 Route::get('/', [PublicController::class, "home"])->name('home');
 
@@ -19,6 +20,14 @@ Route::delete('/article/destroy/{article}', [ArticleController::class, 'destroy'
 
 Route::get("/category/{category}", [ArticleController::class, "byCategory"])->name("byCategory");
 
-// rotta barra di ricerca
 
+// Rotte per Revisione articoli
+Route::get('/revisor/index', [RevisorController::class,'index'])->middleware("isRevisor")->name('revisor.index');
+Route::patch('/accept/{article}' , [RevisorController::class,'accept'])->name('accept');
+Route::patch("/reject/{article}", [RevisorController::class, "reject"])->name("reject");
+Route::get('/revisor/request', [RevisorController::class,'becomeRevisor'])->middleware('auth')->name('become.revisor');
+Route::get('/make/revisor/{user}' , [RevisorController::class,'makeRevisor'])->name('make.revisor');
+
+// rotta barra di ricerca
 Route::get("/search/article", [PublicController::class, "searchArticles"])->name("article.search");
+

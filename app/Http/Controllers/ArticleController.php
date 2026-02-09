@@ -20,7 +20,7 @@ public static function middleware(): array{
 }
 
 public function article_index(){
-    $articles = Article::orderBy('created_at','desc')->paginate(6);
+    $articles = Article::where('is_accepted', true)->orderBy('created_at','desc')->paginate(6);
 
     return view ('articles.index', compact('articles',));
     }
@@ -45,7 +45,10 @@ public function store(Request $request)
 }
 
 public function byCategory(Category $category){
-    return view ("article.byCategory", ["articles"=> $category->articles, "category"=>$category]);
+
+    $articles= $category->articles->where('is_accepted', true);
+    return view ("article.byCategory",compact('articles', 'category'));
+    //  ["articles"=> $category->articles, "category"=>$category]);
 }
 
 

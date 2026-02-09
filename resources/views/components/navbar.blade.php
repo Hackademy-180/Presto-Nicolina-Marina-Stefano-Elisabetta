@@ -24,6 +24,17 @@
                         <a class="nav-link active" aria-current="page" href="{{route('home')}}">Home</a>
                     </li>
                     @auth
+                    {{-- inizio collegamento area revisore --}}
+                    @if(Auth::user()->is_revisor)
+                    <li class="nav-item">
+                        <a href="{{route("revisor.index")}}" class="nav-link btn btn-outline-success btn-sm position-relative w-sm-25">Zona revisore
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                {{\App\Models\Article::toBeRevisedCount()}}
+                            </span>
+                        </a>
+                    </li>
+                    @endif
+                    {{-- fine collegamento area revisore --}}
                     <li class="nav-item">
                         <a class="nav-link active fw-bold" href="">Benvenut* {{Auth::user()->name}}</a>
                     </li>

@@ -157,6 +157,11 @@
               <a class="text-body" href="#!">Negozi e Aziende</a>
             </li>
             <li>
+              <a class="text-body" href="{{route('become.revisor')}} ">Lavora come revisore per Noi</a>
+              
+            </li>
+
+            <li>
               <a class="text-body" href="#!">Presto per le aziende</a>
             </li>
           </ul>
