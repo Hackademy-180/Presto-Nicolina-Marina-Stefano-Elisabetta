@@ -9,17 +9,17 @@
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="query"/>
                         </form>
                     </div>
-                    <div class="d-flex flex-column align-items-center  w-25 mt-3">
+                    <div class="d-flex flex-column align-items-center w-25 mt-3">
                         <p class="fw-bold">In quale categoria?</p>
                         <div class="d-flex justify-content-center">
-                            <button class="btn btnCategory" id="filterBtn" type="button"
+                            <button class="btnCategory" id="filterBtn" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#collapseCategorie" aria-expanded="false"
                                 aria-controls="collapseExample">
                                 Categorie
                             </button>
-                            <div class="collapse mt-5 text-center" id="collapseCategorie">
-                                <div class="form-check text-center">
-                                    <ul class="list-unstyled">
+                            <div class="collapse collapseCategorie mt-5 text-center" id="collapseCategorie">
+                                <div class="form-check">
+                                    <ul class="list-unstyled me-4">
                                         @foreach($categories as $category)
                                         <li>
                                             <a href="" class="dropdown-item text-capitalize">{{$category->name}}</a>
@@ -36,7 +36,7 @@
                     <div class="d-flex flex-column align-items-center w-25 mt-3">
                         <p class="fw-bold">Dove?</p>
                         <form class="" role="search">
-                            <input class="form-control me-2" type="search" placeholder="" aria-label="Search" />
+                            <input class="form-control me-2" type="search" placeholder="Tutta Italia" aria-label="Search" />
                         </form>
                     </div>
                 </div>
