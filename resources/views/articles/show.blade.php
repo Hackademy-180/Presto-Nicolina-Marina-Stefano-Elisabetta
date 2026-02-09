@@ -7,7 +7,7 @@
         </div>
         <div class="row height-custom justify-content-center py-5">
             <div class="col-12 col-md-6 mb3">
-
+                
                 <div id="carouselExampleIndicators" class="carousel slide">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -26,13 +26,15 @@
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <i class="fa-solid fa-chevron-left fa-2x text-white"></i>
                         <span class="visually-hidden">Previous</span>
                     </button>
+                    
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <i class="fa-solid fa-chevron-right fa-2x text-white"></i>
                         <span class="visually-hidden">Next</span>
                     </button>
+                    
                 </div>
             </div>
             <div class="col-12 col-md-6 mb-3 height-custom text-center">
@@ -42,12 +44,12 @@
                     <p>{{$article->description}}</p>
                     <h4 class="fw-bold mt-5">Prezzo: {{$article->price}} €</h4>
                     @if(Auth::check() && Auth::user()->id == $article->user->id)
-
+                    
                     <form action="{{route('article_destroy', compact('article'))}}" method="post">
                         @csrf
                         @method('delete')
                         <button type="submit" class="btn btn-delete btn-custom bg-danger text-white">ELIMINA</button>
-
+                        
                     </form>
                     @endif
                 </div>

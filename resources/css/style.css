@@ -299,3 +299,8 @@ a.form-button{
 }
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none;
+}
+
