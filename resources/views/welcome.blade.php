@@ -4,6 +4,9 @@
         {{session("errorMessage")}}
     </div>
     @endif
+    @if(session()->has('message'))
+        <div class="alert alert-success text-center shadow rounded w-50">
+            {{session('daje revisor da qui inizia il tuo percorso da revisore')}}
     <header class="container-fluid text-center">
         <div class="row row-home ">
             <div class="d-flex justify-content-center mt-5">

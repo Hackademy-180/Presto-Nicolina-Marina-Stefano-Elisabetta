@@ -24,10 +24,10 @@ Route::get("/category/{category}", [ArticleController::class, "byCategory"])->na
 // Rotte per Revisione articoli
 Route::get('/revisor/index', [RevisorController::class,'index'])->middleware("isRevisor")->name('revisor.index');
 Route::patch('/accept/{article}' , [RevisorController::class,'accept'])->name('accept');
-// rotta barra di ricerca
+Route::patch("/reject/{article}", [RevisorController::class, "reject"])->name("reject");
+Route::get('/revisor/request', [RevisorController::class,'becomeRevisor'])->middleware('auth')->name('become.revisor');
+Route::get('/make/revisor/{user}' , [RevisorController::class,'makeRevisor'])->name('make.revisor');
 
+// rotta barra di ricerca
 Route::get("/search/article", [PublicController::class, "searchArticles"])->name("article.search");
 
-// rotta per rifiutare l'articolo
-
-Route::patch("/reject/{article}", [RevisorController::class, "reject"])->name("reject");
