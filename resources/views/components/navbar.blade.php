@@ -59,6 +59,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('register')}}">Registrati</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Lavora con noi</a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorie</a>
                         <ul class="dropdown-menu">
