@@ -7,7 +7,7 @@
     @if(session()->has('message'))
         <div class="alert alert-success text-center shadow rounded w-50">
             {{session('daje revisor da qui inizia il tuo percorso da revisore')}}
-            @endif
+    @endif
     <header class="container-fluid text-center">
         <div class="row row-home ">
             <form action="{{route("article.search")}}" method="GET">
