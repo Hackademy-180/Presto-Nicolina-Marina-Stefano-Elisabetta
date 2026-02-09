@@ -1,4 +1,9 @@
 <x-layout>
+    @if(session()->has("errorMessage"))
+    <div class="alert alert-danger text-center shadow rounded w-50">
+        {{session("errorMessage")}}
+    </div>
+    @endif
     <header class="container-fluid text-center">
         <div class="row row-home ">
             <form action="{{route("article.search")}}" method="GET">
