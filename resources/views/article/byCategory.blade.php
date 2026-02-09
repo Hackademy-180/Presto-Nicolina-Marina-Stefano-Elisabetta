@@ -2,10 +2,10 @@
     <main class="container">
         <section class="row">
             <article class="col-12">
-                <h1>Articoli della categoria <span>{{$category->name}}</span></h1>
+                <h1 class="text-center mt-5">Articoli della categoria: <span>{{$category->name}}</span></h1>
             </article>
         </section>
-        <section class="row">
+        <section class="row mt-5">
             @forelse ($articles as $article)
                 <div class="col-12 col-md-3">
                     <x-card :article="$article" />

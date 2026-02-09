@@ -3,12 +3,12 @@
         <div class="row height-custum justify-content-center align-items-center m-0">
             
             <div class="col-12 mt-3 ps-1">
-                <h3 class="text-right"> <strong>I tuoi annunci</strong></h3>
+                <h3 class="text-center mt-5 display-4"> <strong>I tuoi annunci</strong></h3>
                 
             </div>
             
         </div>
-        <div class="row height-custum justify-content-center align-items-center text-center mt-2">
+        <div class="row height-custum justify-content-center align-items-center text-center mt-5">
             @forelse ($articles as $article)
             <div class="col-12 col-md-3">
                 <x-card :article="$article"/>

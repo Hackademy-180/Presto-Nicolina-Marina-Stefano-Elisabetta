@@ -72,6 +72,14 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
+#collapseCategorie, #collapsePrezzo, #collapseParola, #collapseTaglie {
+    position: absolute;
+    z-index: 999;
+    width: 220px;
+    border: 1px solid #f7f0f0;
+    background: white;
+}
+
 /* First Section */
 
 .firstSection{

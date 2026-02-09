@@ -11,26 +11,24 @@
                     </div>
                     <div class="d-flex flex-column align-items-center  w-25 mt-3">
                         <p class="fw-bold">In quale categoria?</p>
-                        <div class="accordion" id="accordionExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Tutte le categorie
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <ul class="list-unstyled">
-                                            @foreach($categories as $category)
-                                            <li>
-                                                <a href="" class="dropdown-item text-capitalize">{{$category->name}}</a>
-                                            </li>
-                                            @if (!$loop->last)
-                                            <hr class="dropdown-divider">
-                                            @endif
-                                            @endforeach
-                                        </ul>
-                                    </div>
+                        <div class="d-flex justify-content-center">
+                            <button class="btn btnCategory" id="filterBtn" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseCategorie" aria-expanded="false"
+                                aria-controls="collapseExample">
+                                Categorie
+                            </button>
+                            <div class="collapse mt-5 text-center" id="collapseCategorie">
+                                <div class="form-check text-center">
+                                    <ul class="list-unstyled">
+                                        @foreach($categories as $category)
+                                        <li>
+                                            <a href="" class="dropdown-item text-capitalize">{{$category->name}}</a>
+                                        </li>
+                                        @if (!$loop->last)
+                                        <hr class="dropdown-divider">
+                                        @endif
+                                        @endforeach
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -43,6 +41,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </header>
     <section class="container">
