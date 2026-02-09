@@ -20,7 +20,13 @@ Route::delete('/article/destroy/{article}', [ArticleController::class, 'destroy'
 
 Route::get("/category/{category}", [ArticleController::class, "byCategory"])->name("byCategory");
 
+<<<<<<< HEAD
 
 // Rotte per Revisione articoli
 Route::get('/revisor/index', [RevisorController::class,'index'])->name('revisor.index');
 Route::patch('/accept/{article}' , [RevisorController::class,'accept'])->name('accept');
+=======
+// rotta barra di ricerca
+
+Route::get("/search/article", [PublicController::class, "searchArticles"])->name("article.search");
+>>>>>>> 6b3483e72146c65f504e7bccfc4d68db5cc8624b

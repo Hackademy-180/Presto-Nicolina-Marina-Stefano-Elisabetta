@@ -79,6 +79,24 @@
     border: 1px solid #f7f0f0;
     background: white;
 }
+.collapseCategorie a{
+    color: #333;
+    padding:8px 0;
+    transition: background-color 0.3s ease, color 0,3s ease;
+    text-align: center;
+}
+.collapseCategorie a:hover{
+    background-color: #f9423a;
+    color:white;
+    font-weight:600;
+}
+.btnCategory{
+    width: 200px;
+    background:white;
+    border:1px solid #e4e0e0;
+    height: 36px;
+    border-radius: 5px;
+}
 
 /* First Section */
 
@@ -144,6 +162,10 @@
 .detailBtn{
     background-color: #f9423a;
 }
+.btnCard{
+    background: #ca4040 !important;
+
+}
 
 
 .logo-footer {
@@ -154,6 +176,7 @@
     --mdb-navbar-box-shadow: none;
     box-shadow: none !important;
 }
+
 /* LOGIN */
 .login-article {
     margin-right: 20px; 
@@ -274,5 +297,10 @@ a.form-button{
     width: 100vw;
     background-color: white;
 }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none;
 }
 
