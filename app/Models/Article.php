@@ -25,6 +25,7 @@ class Article extends Model
         return $this->belongsTo(Category::class);
     }
 
+
     public function toSearchableArray()
     {
         return[
@@ -36,4 +37,10 @@ class Article extends Model
         ];
     }
 
+    public function setAccepter($value)
+    {
+        $this->is_accepted = $value;
+        $this->save();
+        return true;
+    }
 }
