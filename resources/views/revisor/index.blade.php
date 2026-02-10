@@ -8,14 +8,12 @@
     </div>
     @endif
     
-    <div class="container-fluid pt-5">
+    <div class="container-fluid pt-3">
 
         <div class="row">
-            <div class="rounded shadow bg-body-secondary">
-                <h1 class="display-5 text-center pb-2">
+                <h1 class="text-center pb-3">
                     Revisor dashboard
                 </h1>
-            </div>
         </div>
     </div>
     @if ($article_to_check)
@@ -60,16 +58,21 @@
         </div>
     </div>
     @else
-    <div class="row justify-content-center align-items-center height-custom text-center">
-        <div class="col-12">
-            <h1 class="fst-italic display-4">
-                Nessun articolo da revisionare
-            </h1>
-            <a href="{{ route('home') }}" class="mt-5 btn btn-success">
-                Torna all'homepage
-            </a>
-        </div>
-    </div>
+    <div class="row justify-content-center align-items-center height-custom text-center no-item-container mx-0">
+                <div class="col-12 text-center">
+                    <img src="{{ asset('media/no-articles-to-revise-2.png') }}" alt="" class="no-item-icon">
+                </div>
+                
+                <div class="col-12">
+                    <h4 class="text-center">
+                        <strong>Nessun articolo da revisionare</strong>
+                    </h4>
+                    <div class="col-auto box-buttons">
+                    <a href="{{route('home')}}" class="mb-5 form-button">Torna all'homepage</a>
+                    </div>
+                </div>
+            </div>
+
     @endif
 </div>
 </x-layout>
