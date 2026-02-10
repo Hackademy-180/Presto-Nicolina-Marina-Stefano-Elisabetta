@@ -14,7 +14,7 @@
                 <div class="col-12 text-center">
                     <h3>Non sono ancora stati creati articoli per questa categoria!</h3>
                     @auth
-                        <a href="{{route("create.article")}}" class="btn btn-dark my-5">Pubblica un articolo</a>
+                        <a href="{{route("article_create")}}" class="btn btn-dark my-5">Pubblica un articolo</a>
                     @endauth
                 </div>
             @endforelse

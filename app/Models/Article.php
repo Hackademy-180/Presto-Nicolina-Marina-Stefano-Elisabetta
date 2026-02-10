@@ -15,7 +15,6 @@ class Article extends Model
         'price',
         'category_id',
         'user_id',
-        
         ];
 
     public function user(){

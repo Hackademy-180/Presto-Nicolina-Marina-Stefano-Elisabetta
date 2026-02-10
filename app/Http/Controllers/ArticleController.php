@@ -24,6 +24,7 @@ public function article_index(){
 
     return view ('articles.index', compact('articles',));
     }
+
 public function article_create(){
     return view("articles.create");
 }
@@ -44,10 +45,12 @@ public function store(Request $request)
     
 }
 
+
 public function byCategory(Category $category){
 
     $articles= $category->articles->where('is_accepted', true);
     return view ("article.byCategory",compact('articles', 'category'));
+
     //  ["articles"=> $category->articles, "category"=>$category]);
 }
 
@@ -60,11 +63,11 @@ public function article_show(Article $article){
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Article $article)
-    {
+public function destroy(Article $article){
             $article->delete();
             return redirect(route('home')); 
-        
     }
 
+
+    
 }

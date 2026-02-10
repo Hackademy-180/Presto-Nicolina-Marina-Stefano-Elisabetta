@@ -30,7 +30,7 @@
                                         <ul class="list-unstyled me-4">
                                             @foreach($categories as $category)
                                             <li>
-                                                <a href="" class="dropdown-item text-capitalize">{{$category->name}}</a>
+                                                <a href=" {{route ('byCategory', compact('category'))}}" class="dropdown-item text-capitalize">{{$category->name}}</a>
                                             </li>
                                             @if (!$loop->last)
                                             <hr class="dropdown-divider">
@@ -51,6 +51,9 @@
                     </div>
                 </div>
             </form>
+
+              
+         
         </div>
     </header>
     <section class="container">

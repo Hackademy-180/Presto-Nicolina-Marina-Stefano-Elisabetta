@@ -16,9 +16,7 @@ Route::get('/article/show/{article}',[ArticleController::class, "article_show"])
 Route::get('/article/edit/{article}',[ArticleController::class, "article_edit"])->name('article_edit');
 Route::put('/article/update/{article}', [ArticleController::class, 'update'])->name('article_update');
 Route::delete('/article/destroy/{article}', [ArticleController::class, 'destroy'])->name('article_destroy');
-// rotta categorie
 
-Route::get("/category/{category}", [ArticleController::class, "byCategory"])->name("byCategory");
 
 
 // Rotte per Revisione articoli
@@ -28,6 +26,10 @@ Route::patch('/reject/{article}', [RevisorController::class, "reject"])->name("r
 Route::get('/revisor/request', [RevisorController::class,'becomeRevisor'])->middleware('auth')->name('become.revisor');
 Route::get('/make/revisor/{user}' , [RevisorController::class,'makeRevisor'])->name('make.revisor');
 
+// rotta per l'undo
+Route::patch('/unDo/{value?}', [RevisorController::class, 'updateLastReviewed'])->name('unDo');
+
 // rotta barra di ricerca
 Route::get("/search/article", [PublicController::class, "searchArticles"])->name("article.search");
+Route::get("/category/{category}", [ArticleController::class, "byCategory"])->name("byCategory");
 

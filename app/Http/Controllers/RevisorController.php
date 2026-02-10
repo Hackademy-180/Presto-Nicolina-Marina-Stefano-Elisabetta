@@ -31,6 +31,28 @@ class RevisorController extends Controller
         return redirect()->back()->with("message", "Hai rifiutato l'articolo $article->title");
     }
 
+    // funzione in prova unDo
+    public function updateLastReviewed($value = null)
+    {
+        $lastArticle = Article::whereNotNull('is_accepted')->orderBy('updated_at', 'desc')->first();
+    
+        if(!is_null($value)){
+            $value= filter_var($value, FILTER_VALIDATE_BOOLEAN);
+
+        }
+       
+
+        if (!$lastArticle) {
+            return redirect()->back()->with('error', 'Nessun articolo trovato.');
+        }
+    
+        $lastArticle->is_accepted = $value;
+        $lastArticle->save();
+    
+        return redirect()->back()->with('success', 'Ultimo articolo aggiornato.');
+    }
+    // fine prova unDo
+
     public function becomeRevisor(){
         Mail::to('admin@presto.it')->send(new becomeRevisor(Auth::user()));
         return redirect()->route('home')->with('message','Complimenti,hai richiesto di diventare revisor');
