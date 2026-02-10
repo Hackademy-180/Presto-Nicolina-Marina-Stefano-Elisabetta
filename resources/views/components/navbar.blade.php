@@ -47,7 +47,7 @@
                             <a class="nav-link active" aria-current="page" href="{{route('home')}}">Home</a>
                         </li>
                         @auth
-                        <li class="nav-item">
+                        <li class="nav-item helloPhrase">
                             <a class="nav-link active fw-bold" href="">Benvenut* {{Auth::user()->name}}</a>
                         </li>
                         <li class="nav-item">
