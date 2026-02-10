@@ -27,11 +27,8 @@ Route::patch('/reject/{article}', [RevisorController::class, "reject"])->name("r
 Route::get('/revisor/request', [RevisorController::class,'becomeRevisor'])->middleware('auth')->name('become.revisor');
 Route::get('/make/revisor/{user}' , [RevisorController::class,'makeRevisor'])->name('make.revisor');
 
-<<<<<<< HEAD
 // rotta per l'undo
 Route::patch('/unDo/{value?}', [RevisorController::class, 'updateLastReviewed'])->name('unDo');
-=======
->>>>>>> 790a86844ee9fe3f04ffac394681a43da64a1dc2
 
 // rotta barra di ricerca
 Route::get("/search/article", [PublicController::class, "searchArticles"])->name("article.search");
