@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
+use Illuminate\Foundation\Auth\User;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controllers\HasMiddleware;
 use Illuminate\Routing\Controllers\Middleware;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 
 class AdminController extends Controller implements HasMiddleware
 {
@@ -21,5 +23,7 @@ class AdminController extends Controller implements HasMiddleware
         return view("admin.admin-index", compact("users"));
 
     }
+
+    
 
 }
