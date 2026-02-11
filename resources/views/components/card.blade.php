@@ -1,6 +1,6 @@
 <div class="card mx-auto card-w shadow mb-3 d-flex flex-column align-items-center">
 
-    <img src="https://picsum.photos/200" class="card-img-top" alt="immagine dell' articolo {{$article->title}}">
+    <img src="{{ $article->images->isNotEmpty() ? Storage::url($article->images->first()->path) : 'https://picsum.photos/200' }}" class="card-img-top" alt="Immagine dell'articolo {{ $article->title }}">
     <div class="card-body d-flex flex-column align-items-center justify-content-between text-center">
 
         <h4 class="card-title">{{$article->title}} </h4>

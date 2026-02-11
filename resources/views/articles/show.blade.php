@@ -7,6 +7,7 @@
         </div>
         <div class="row height-custom justify-content-center py-5">
             <div class="col-12 col-md-6 mb3">
+                @if ($article->images->count() > 0)
                 
                 <div id="carouselExampleIndicators" class="carousel slide">
                     <div class="carousel-indicators">
@@ -15,16 +16,15 @@
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="https://picsum.photos/400" class="d-block w-100 " alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://picsum.photos/400" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://picsum.photos/400" class="d-block w-100" alt="...">
-                        </div>
+                        @foreach ($articles->images as $key => $image)
+                        <div class="carousel-item @if ($loop->first) active @endif">
+                        <img src="{{ Storage::url($image->path) }}"
+                             class="d-block w-100 rounded shadow"
+                             alt="Immagine {{ $key + 1 }} dell'articolo {{ $article->title }}">
                     </div>
+                    </div>
+                    @endforeach
+                    @if ($article->images->count() > 1)
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                         <i class="fa-solid fa-chevron-left fa-2x text-white"></i>
                         <span class="visually-hidden">Previous</span>
@@ -34,8 +34,12 @@
                         <i class="fa-solid fa-chevron-right fa-2x text-white"></i>
                         <span class="visually-hidden">Next</span>
                     </button>
+                    @endif
                     
                 </div>
+                @else 
+                <img src="https://picsum.photos/300" alt="Nessuna foto inserita dall'utente">
+                @endif
             </div>
             <div class="col-12 col-md-6 mb-3 height-custom text-center">
                 <h2 class="mt-5"><span class="fw-bold">Titolo:</span> {{$article->title}}</h2>
