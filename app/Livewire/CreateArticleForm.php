@@ -54,7 +54,7 @@ class CreateArticleForm extends Component
         ]);
         if(count($this->images) > 0){
             foreach($this->images as $image){
-                $this->article->images()->create(['path'=>$image->store('images,public')]);
+                $this->article->images()->create(['path'=>$image->store('images','public')]);
             }
         }
         
@@ -85,7 +85,8 @@ class CreateArticleForm extends Component
     public function removeImage($key)
     {
         if(in_array($key, array_keys($this->images))){
-            unset($this->image[$key]);
+            unset($this->images[$key]);
+            // dd( $this->images);
         }
     }
     
