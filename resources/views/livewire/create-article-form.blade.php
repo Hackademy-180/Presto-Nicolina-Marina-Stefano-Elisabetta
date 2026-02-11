@@ -28,6 +28,40 @@
         @enderror
       </div>
 
+      {{-- input immagini --}}
+      <div class="mb-3">
+        <input type="file" wire:model.live="temporary_images" multiple class="form-control shadow @error('temporary_images.*') is-invalid @enderror" placeholder="img/">
+        @error('temporary_images.*')
+        <p class="fst-italic text-danger">{{$message}}</p>
+        @enderror
+        @error('temporary_images.*')
+        <p class="fst-italic text-danger">{{$message}}</p>
+        @enderror
+      </div>
+      @if (!empty($images))
+      <div class="row">
+        <div class="row border border-4 border-success rounded shadow py-4">
+          @foreach ($images as $key=> $image)
+          <div class="col d-flex flex-column aling-itemps-center my-3">
+            <div class="img-preview mx-auto aling-items-center shadow rounded" style="background-image: url({{$image->temporaryUrl()}});"></div>
+          </div>              
+          @endforeach
+        </div>
+      </div>
+      @endif
+
+
+      {{-- preview immagini --}}
+      <div class="row border border-4 border-success rounded shadow py-4">
+        @foreach ($images as $key=> $image)
+        <div class="col d-flex flex-column aling-itemps-center my-3">
+          <div class="img-preview mx-auto aling-items-center shadow rounded" style="background-image: url({{$image->temporaryUrl()}});"></div>
+        </div>  
+        <button type="button" class="btn mt-1 btn-danger" wire:click="removeImage({{$key}})">X</button>
+      </div>
+      @endforeach
+    </div>
+
       <div class="mb-3 text-center">
         <select id="category" class="form-select form-select-sm custom-select @error('category') is-invalid @enderror" wire:model="category">
           <option label disabled>Seleziona una categoria</option>

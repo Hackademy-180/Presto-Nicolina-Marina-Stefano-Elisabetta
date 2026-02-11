@@ -69,5 +69,6 @@ public function destroy(Article $article){
     }
 
 
+
     
 }
