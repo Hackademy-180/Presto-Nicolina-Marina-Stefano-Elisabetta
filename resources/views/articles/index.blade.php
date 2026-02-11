@@ -10,7 +10,7 @@
         </div>
         <div class="d-flex justify-content-evenly mt-5 flex-wrap">
             @forelse ($articles as $article)
-            <div >
+            <div class="">
                 <x-card :article="$article"/>
             </div>
             @empty

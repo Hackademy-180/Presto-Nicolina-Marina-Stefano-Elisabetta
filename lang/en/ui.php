@@ -84,6 +84,27 @@ return
         'undoLastReview' => 'Undo Last Review',
         'returnHome' => 'Back to Home',
 
+        // Footer
+        'assistance' => 'Support',
+        'rules' => 'Rules',
+        'security' => 'Security',
+        'terms' => 'Terms and Conditions',
+        'privacy' => 'Privacy Policy',
+        'accessibility' => 'Accessibility',
+        'manageCookies' => 'Manage Cookies',
+
+        'tuttoPrestoSell' => 'TuttoPresto Sell',
+        'tuttoPrestoBuy' => 'TuttoPresto Buy',
+        'tuttoPrestoService' => 'TuttoPresto Service',
+        'tuttoPrestoServiceProfessionals' => 'TuttoPresto Service for Professionals',
+
+        'promoteAd' => 'Promote Ad',
+        'sellingTips' => 'Selling Tips',
+
+        'shopsAndCompanies' => 'Shops and Companies',
+        'workAsReviewer' => 'Work as a Reviewer for Us',
+        'prestoForCompanies' => 'Presto for Companies',
+
 
 
 

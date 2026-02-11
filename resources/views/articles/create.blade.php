@@ -1,5 +1,5 @@
 <x-layout>
-    <main class="">
+    <main class="container">
         <div class="row justify-content-center">
             <div class="col-12 text-center pt-5">
                 <h1>{{ __('ui.heroTitle') }}</h1>

@@ -84,4 +84,25 @@ return
         'undoLastReview' => 'ยกเลิกการตรวจสอบล่าสุด',
         'returnHome' => 'กลับสู่หน้าแรก',
 
+        // Footer
+        'assistance' => 'ศูนย์ช่วยเหลือ',
+        'rules' => 'กฎระเบียบ',
+        'security' => 'ความปลอดภัย',
+        'terms' => 'ข้อกำหนดและเงื่อนไข',
+        'privacy' => 'นโยบายความเป็นส่วนตัว',
+        'accessibility' => 'การเข้าถึง',
+        'manageCookies' => 'จัดการคุกกี้',
+
+        'tuttoPrestoSell' => 'TuttoPresto ขาย',
+        'tuttoPrestoBuy' => 'TuttoPresto ซื้อ',
+        'tuttoPrestoService' => 'บริการ TuttoPresto',
+        'tuttoPrestoServiceProfessionals' => 'บริการ TuttoPresto สำหรับมืออาชีพ',
+
+        'promoteAd' => 'โปรโมทประกาศ',
+        'sellingTips' => 'เคล็ดลับการขาย',
+
+        'shopsAndCompanies' => 'ร้านค้าและบริษัท',
+        'workAsReviewer' => 'ร่วมงานกับเราในตำแหน่งผู้ตรวจสอบ',
+        'prestoForCompanies' => 'Presto สำหรับบริษัท',
+
     ];

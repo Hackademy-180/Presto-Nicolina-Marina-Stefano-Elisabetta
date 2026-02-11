@@ -84,6 +84,27 @@ return
         'undoLastReview' => 'Отменить последнюю проверку',
         'returnHome' => 'Вернуться на главную',
 
+        // Footer
+        'assistance' => 'Поддержка',
+        'rules' => 'Правила',
+        'security' => 'Безопасность',
+        'terms' => 'Условия использования',
+        'privacy' => 'Политика конфиденциальности',
+        'accessibility' => 'Доступность',
+        'manageCookies' => 'Управление файлами cookie',
+
+        'tuttoPrestoSell' => 'TuttoPresto Продажа',
+        'tuttoPrestoBuy' => 'TuttoPresto Покупка',
+        'tuttoPrestoService' => 'Сервис TuttoPresto',
+        'tuttoPrestoServiceProfessionals' => 'Сервис TuttoPresto для профессионалов',
+
+        'promoteAd' => 'Продвигать объявление',
+        'sellingTips' => 'Советы по продаже',
+
+        'shopsAndCompanies' => 'Магазины и компании',
+        'workAsReviewer' => 'Работать рецензентом у нас',
+        'prestoForCompanies' => 'Presto для компаний',
+
 
 
 

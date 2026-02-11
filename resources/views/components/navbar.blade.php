@@ -42,12 +42,12 @@
                 <a href="{{route('home')}}" class="logo text-decoration-none text-danger ms-4"><img src="{{ asset('media/logo.png') }}" alt="" class="logoPresto"></a>
             </div>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
                 <span class="navbar-toggler-icon"></span>
-            </button>
+            </button> -->
 
             <div class="collapse navbar-collapse w-100 d-flex justify-content-end me-4 navbar-custom navbarDrop" id="navbarNavDropdown">
-                <ul class="navbar-nav  d-lg-flex flex-row gap-4">
+                <ul class="navbar-nav  d-lg-flex flex-row gap-2 gap-lg-4">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{{route('home')}}">{{ __('ui.home') }}</a>
                     </li>

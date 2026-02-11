@@ -90,7 +90,7 @@
         <div class="container-fluid">
             <div class="articles-grid d-flex row cardSection mt-5">
                 @forelse ($articles as $article)
-                <div class="col-12 col-md-3 mt-5">
+                <div class="col-12 col-sm-6 col-lg-3 mt-5">
                     <x-card :article="$article" />
                 </div>
                 @empty

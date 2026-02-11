@@ -3,9 +3,9 @@ return
     [
         'hello' => 'Ciao',
         'allArticles' => 'Tutti gli articoli',
-        'motors' => 'Motori',
+        'engine' => 'Motori',
         'market' => 'Market',
-        'home'   => 'Casa',
+        'property'   => 'Casa',
         'work'   => 'Lavoro',
         'magazine' => 'Magazine',
         'sellingTips' => 'Consigli per la vendita',
@@ -83,5 +83,26 @@ return
         'noListingsToReview' => 'Nessun annuncio da revisionare',
         'undoLastReview' => 'Annulla ultima revisione',
         'returnHome' => 'Torna alla home',
+
+        // Footer
+        'assistance' => 'Assistenza',
+        'rules' => 'Regole',
+        'security' => 'Sicurezza',
+        'terms' => 'Condizioni',
+        'privacy' => 'Privacy',
+        'accessibility' => 'Accessibilità',
+        'manageCookies' => 'Gestisci cookies',
+
+        'tuttoPrestoSell' => 'TuttoPresto Vendi',
+        'tuttoPrestoBuy' => 'TuttoPresto Compra',
+        'tuttoPrestoService' => 'Servizio TuttoPresto',
+        'tuttoPrestoServiceProfessionals' => 'Servizio TuttoPresto per Professionisti',
+
+        'promoteAd' => 'Promuovi annuncio',
+        'sellingTips' => 'Consigli per la vendita',
+
+        'shopsAndCompanies' => 'Negozi e Aziende',
+        'workAsReviewer' => 'Lavora come revisore per Noi',
+        'prestoForCompanies' => 'Presto per le aziende',
 
     ];

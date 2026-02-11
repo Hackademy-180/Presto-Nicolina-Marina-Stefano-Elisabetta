@@ -85,4 +85,25 @@ return
         'undoLastReview' => '撤销上次审核',
         'returnHome' => '返回首页',
 
+        // Footer
+        'assistance' => '帮助中心',
+        'rules' => '规则',
+        'security' => '安全',
+        'terms' => '条款和条件',
+        'privacy' => '隐私政策',
+        'accessibility' => '无障碍访问',
+        'manageCookies' => '管理 Cookie',
+
+        'tuttoPrestoSell' => 'TuttoPresto 出售',
+        'tuttoPrestoBuy' => 'TuttoPresto 购买',
+        'tuttoPrestoService' => 'TuttoPresto 服务',
+        'tuttoPrestoServiceProfessionals' => 'TuttoPresto 专业服务',
+
+        'promoteAd' => '推广广告',
+        'sellingTips' => '销售技巧',
+
+        'shopsAndCompanies' => '商店和公司',
+        'workAsReviewer' => '加入我们成为审核员',
+        'prestoForCompanies' => 'Presto 企业服务',
+
     ];
