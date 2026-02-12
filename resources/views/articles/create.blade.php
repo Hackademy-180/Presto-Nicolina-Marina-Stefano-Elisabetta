@@ -1,5 +1,5 @@
 <x-layout>
-    <main class="">
+    <main class="vw-100">
         <div class="row justify-content-center">
             <div class="col-12 text-center pt-5">
                 <h1>Inserisci il tuo annuncio in pochi minuti</h1>
