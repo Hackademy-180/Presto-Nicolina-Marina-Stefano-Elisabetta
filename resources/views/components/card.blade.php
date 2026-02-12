@@ -1,6 +1,8 @@
 <div class="card mx-auto card-w shadow mb-3 d-flex flex-column align-items-center">
 
-    <img src="{{ $article->images->isNotEmpty() ? Storage::url($article->images->first()->path) : 'https://picsum.photos/200' }}" class="card-img-top" alt="Immagine dell'articolo {{ $article->title }}">
+    {{-- con la us 6 viene modificato da src="{{ $article->images->isNotEmpty() ? Storage::url($article->images->first()->path) : 'https://picsum.photos/200'}} in src="{{ $article->images->isNotEmpty() ? $article->images->first()->getUrl(300, 300): 'https://picsum.photos/200'}} --}}
+
+    <img src="{{ $article->images->isNotEmpty() ? $article->images->first()->getUrl(300, 300) : 'https://picsum.photos/200' }}" class="card-img-top" alt="Immagine dell'articolo {{ $article->title }}">
     <div class="card-body d-flex flex-column align-items-center justify-content-between text-center">
 
         <h4 class="card-title">{{$article->title}} </h4>
