@@ -362,6 +362,7 @@
 
 /* LOGIN */
 .login-wrapper {
+    background-image: url('/public/media/bg_login_2.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -471,6 +472,8 @@
 
 /* Add articles section */
 .add-article-wrapper {
+    background-image: url('/public/media/bg_create_article_3.png');
+    /* background: red; */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -550,9 +553,6 @@ a.form-button {
     border-radius: 5px;
 }
 
-/* Add article form  livewire*/
-.formDiv {}
-
 /* Revisor */
 .btn-cancel-revisor {
     background: #77dd77 !important;
@@ -579,4 +579,9 @@ a.form-button {
     display: flex;
     align-items: start;
     justify-content: center;
+}
+
+.card-welcome{
+    width:100%;
+
 }

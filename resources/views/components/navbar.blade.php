@@ -20,7 +20,7 @@
                 <!-- inizio collegamento area revisore -->
                 @if(Auth::user()->is_revisor)
                 <div class="nav-item list-unstyled">
-                    <a href="{{route("revisor.index")}}" class="nav-link btn btn-outline-danger  py-0 px-2 btn-sm position-relative w-sm-25"><i class="fa-brands fa-black-tie" style="color: #ff0000;"></i> {{ __('ui.revisor') }}
+                    <a href="{{route('revisor.index')}}" class="nav-link btn btn-outline-danger  py-0 px-2 btn-sm position-relative w-sm-25"><i class="fa-brands fa-black-tie" style="color: #ff0000;"></i> {{ __('ui.revisor') }}
                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                             {{\App\Models\Article::toBeRevisedCount()}}
                         </span>
@@ -31,7 +31,7 @@
                 {{-- inizio amministratore --}}
                 @if(Auth::user()->is_admin)
                 <div class="nav-item list-unstyled">
-                    <a href="{{route("admin.index")}}" class="nav-link btn btn-outline-success  py-0 px-2 btn-sm position-relative w-sm-25"><i class="fa-solid fa-user-tie" style="color: #006b25;"></i> {{ __('ui.admin') }}</a>
+                    <a href="{{route('admin.index')}}" class="nav-link btn btn-outline-success  py-0 px-2 btn-sm position-relative w-sm-25"><i class="fa-solid fa-user-tie" style="color: #006b25;"></i> {{ __('ui.admin') }}</a>
                 </div>
                 @endif
             </div>
@@ -39,7 +39,7 @@
         </div>
         <div class="d-flex w-100 border-bottom border-1 secondLine ">
             <div class="box-nav">
-                <a href="{{route('home')}}" class="logo text-decoration-none text-danger ms-4"><img src="{{ asset('media/logo.png') }}" alt="" class="logoPresto"></a>
+                <a href="{{route('home')}}" class="logo text-decoration-none text-danger ms-4"><img src="/media/logo.png" alt="" class="logoPresto"></a>
             </div>
 
             <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">

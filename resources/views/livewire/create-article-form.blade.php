@@ -44,7 +44,7 @@
       </div>
 
       @if (!empty($images))
-      <div class="row border border-4 border-success rounded shadow py-4">
+      <div class="row rounded shadow py-4">
         @foreach ($images as $key => $image)
         <div class="col-6 col-md-4 d-flex flex-column align-items-center my-3">
           <div class="img-preview mx-auto shadow rounded"

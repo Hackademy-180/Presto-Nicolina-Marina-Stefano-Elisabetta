@@ -6,14 +6,13 @@
                 <p>{{ __('ui.heroSubtitle') }}</p>
             </div>
         </div>
-        <section class="container mt-5 add-article-wrapper position-relative" style="background-image: url('{{ asset('media/bg_create_article_3.png') }}');">
-            <div class="row justify-content-center">
-                <div class="row justify-content-center align-items-center height-custom add-form">
-                    <div class="col-12 col-md-6">
-                        <livewire:create-article-form />
-                    </div>
+        <section class="mt-5 add-article-wrapper position-relative">
+            <div class="row justify-content-center align-items-center height-custom add-form">
+                <div class="col-12 col-md-6">
+                    <livewire:create-article-form />
                 </div>
             </div>
+
         </section>
     </main>
 </x-layout>

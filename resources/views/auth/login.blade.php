@@ -1,5 +1,5 @@
 <x-layout>
-    <main class="container login-wrapper position-relative" style="background-image: url('{{ asset('media/bg_login_2.png') }}');">
+    <main class="container login-wrapper position-relative">
         <div class="login-hero-text">
         <p class="hero-line-1">
            {{ __('ui.landingMainText') }}
