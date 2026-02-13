@@ -28,6 +28,7 @@ return
         'location' => 'Местоположение',
         'allItaly' => 'Вся Италия',
         'details' => 'Подробнее',
+        'highlighted_for_you' => 'Рекомендуем для вас',
         'adminPanel' => 'Панель администратора',
         'userRequest' => 'Запрос пользователя:',
         'approve' => 'Одобрить',

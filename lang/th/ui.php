@@ -28,6 +28,7 @@ return
         'location' => 'สถานที่',
         'allItaly' => 'ทั่วอิตาลี',
         'details' => 'ดูรายละเอียด',
+        'highlighted_for_you' => 'แนะนำสำหรับคุณ', 
         'adminPanel' => 'แผงควบคุมผู้ดูแลระบบ',
         'userRequest' => 'คำขอจากผู้ใช้:',
         'approve' => 'อนุมัติ',

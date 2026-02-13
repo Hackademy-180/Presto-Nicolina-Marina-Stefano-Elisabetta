@@ -29,6 +29,7 @@ return
         'location' => '位置',
         'allItaly' => '全意大利',
         'details' => '查看详情',
+        'highlighted_for_you' => '为你推荐',  
         'adminPanel' => '管理员面板',
         'userRequest' => '用户请求：',
         'approve' => '批准',

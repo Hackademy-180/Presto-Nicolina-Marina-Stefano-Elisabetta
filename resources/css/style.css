@@ -38,9 +38,9 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: #ffa3a985;
+    background: #feeceb;
     border: 1px solid transparent;
-    color: red;
+    color: #D32F2F;
     border-radius: 20px;
     height: 40px;
     width: 200px;
@@ -48,10 +48,6 @@
     gap: 5px;
 }
 
-/* BUTTONS */
-.btn-navbar:hover {
-    border: 1px solid red;
-}
 
 .box-buttons {
     display: flex;
@@ -66,14 +62,14 @@
     font-size: 16px;
     font-weight: 600;
     color: white;
-    background-color: #f9423a;
+    background-color: #D32F2F;
     border-radius: 25px;
     border: none;
     height: 40px;
 }
 
 .form-button:hover {
-    background-color: #f9423a;
+    background-color: #D32F2F;
     opacity: 0.8;
 }
 
@@ -90,10 +86,11 @@
         display: flex;
         justify-content: center;
     }
+
     #navbarNavDropdown {
         justify-content: center !important;
-        margin:0;
-        padding-top:20px;
+        margin: 0;
+        padding-top: 20px;
     }
 
     .helloPhrase {
@@ -135,7 +132,7 @@
 }
 
 .btnSearch {
-    background: red;
+    background: #D32F2F;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -161,7 +158,7 @@
 }
 
 .collapseCategorie a:hover {
-    background-color: #f9423a;
+    background-color: #D32F2F;
     color: white;
     font-weight: 600;
 }
@@ -310,17 +307,44 @@
     }
 
 }
+/* Second Section */
+.secondSection {
+    height: 50vh;
+    
+}
+.img-second-section {
+    width: 270px;
+    height: 300px;
+    object-fit: contain;
+    border-radius:20px;
+    border:1px solid #d3d3d370;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
 
+.col-centered{
+    margin: 0 auto;
+}
+
+#carouselExample .carousel-control-next {
+    right: -80px;
+}
+
+#carouselExample .carousel-control-prev {
+    left: -50px;
+}
 
 /* Info Card */
 .categoryBtn {
-    border: 1px solid #d3d3d3;
+    /* border: 1px solid #d3d3d3; */
     border-radius: 5px;
     min-width: 190px;
     height: 36px;
     padding: 5px;
-    background: rgb(250, 247, 240) !important;
-    color: #f9423a !important;
+    /* background: #F1F3F5 !important; */
+
+}
+.text-muted.custom-color{
+    color: #D32F2F !important;
 }
 
 .card-w {
@@ -328,11 +352,11 @@
 }
 
 .detailBtn {
-    background-color: rgb(249, 66, 58);
+    background-color: #D32F2F;
 }
 
 .btnCard {
-    background: #f9423a !important;
+    background: #D32F2F !important;
     min-width: 120px;
 
 }
@@ -409,7 +433,7 @@
 .hero-line-2 {
     font-size: 2.3rem;
     font-weight: 600;
-    color: #ca4040;
+    color: #D32F2F;
 }
 
 
@@ -473,7 +497,6 @@
 /* Add articles section */
 .add-article-wrapper {
     background-image: url('/public/media/bg_create_article_3.png');
-    /* background: red; */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -527,7 +550,7 @@ a.form-button {
     }
 }
 
-.create-article-form {    
+.create-article-form {
     min-width: 400px;
     background-color: #e6b431;
 }
@@ -546,7 +569,7 @@ a.form-button {
 
 /* Detail Article */
 .btn-custom {
-    background: #f9423a;
+    background: #D32F2F;
     width: 120px;
     border: none;
     height: 40px;
@@ -564,10 +587,73 @@ a.form-button {
 }
 
 .btn-cancel {
-    background: #f9423a !important;
+    background: #D32F2F !important;
     color: white !important;
 }
 
+
+
+
+/* Fourth section */
+.findMore{
+    background: #D32F2F;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top:-35px;
+    
+    
+}
+
+/* Fifth section */
+.work-with-us {
+    background: #2E7D32;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Sixth section */
+.titleSpan{
+    color: #D32F2F;
+}
+
+/* Seventh section */
+.container-custom{
+    padding-top:180px;
+    height:75vh;
+}
+.seventhSection {
+    height: 50vh;
+    border:1px solid #d3d3d370;
+    border-radius:20px;
+    background: #D32F2F;
+}
+
+.qr-code {
+    width: 120px;
+    height: 120px;
+    
+}
+.img7section {
+   transform: translateY(-90px);
+   margin-right:48px;
+}
+.star{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.paragraph{
+    border-left:1px solid white;
+    padding-left: 20px;
+}
 /* Footer */
 .logo-footer {
     max-width: 140px;
@@ -579,9 +665,4 @@ a.form-button {
     display: flex;
     align-items: start;
     justify-content: center;
-}
-
-.card-welcome{
-    width:100%;
-
 }

@@ -16,10 +16,8 @@
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
                     <div class="carousel-inner">
-                        {{-- con la us 6 modifico da ($articles->images as key => $image) in ($article->images as key => $image) --}}
                         @foreach ($article->images as $key => $image)
                         <div class="carousel-item @if ($loop->first) active @endif">
-                            {{-- con la us 6 modifico da src="{{ Storage::url($image->path) }}" in src="{{ $image->geturl(300, 300) }}" --}}
                             <img src="{{ $image->getUrl(1000, 1000) }}"
                             class="d-block w-100 rounded shadow"
                             alt="Immagine {{ $key + 1 }} dell'articolo {{ $article->title }}">

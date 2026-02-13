@@ -2,13 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\Controller;
 use App\Models\Article;
 use App\Models\Category;
-use Illuminate\Http\Request;
 
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Routing\Controllers\Middleware;
+use Illuminate\Http\Request;
 use Illuminate\Routing\Controllers\HasMiddleware;
+use Illuminate\Routing\Controllers\Middleware;
+use Illuminate\Support\Facades\Auth;
 
 class ArticleController extends Controller implements HasMiddleware
 {
@@ -20,7 +21,7 @@ public static function middleware(): array{
 }
 
 public function article_index(){
-    $articles = Article::where('is_accepted', true)->orderBy('created_at','desc')->paginate(6);
+    $articles = Article::where('is_accepted', true)->orderBy('created_at','desc')->paginate(8);
 
     return view ('articles.index', compact('articles',));
     }

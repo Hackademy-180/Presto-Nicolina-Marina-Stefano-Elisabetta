@@ -20,7 +20,7 @@
                 <!-- inizio collegamento area revisore -->
                 @if(Auth::user()->is_revisor)
                 <div class="nav-item list-unstyled">
-                    <a href="{{route('revisor.index')}}" class="nav-link btn btn-outline-danger  py-0 px-2 btn-sm position-relative w-sm-25"><i class="fa-brands fa-black-tie" style="color: #ff0000;"></i> {{ __('ui.revisor') }}
+                    <a href="{{route('revisor.index')}}" class="nav-link btn btn-outline-danger  py-0 px-2 btn-sm position-relative w-sm-25"><i class="fa-brands fa-black-tie" style="color: #D32F2F;"></i> {{ __('ui.revisor') }}
                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                             {{\App\Models\Article::toBeRevisedCount()}}
                         </span>
@@ -58,7 +58,7 @@
                     </li>
                     <li class="nav-item">
                         <a href="{{route('article_create')}}" class="inputCreate fw-bold text-decoration-none">
-                            <i class="fa-solid fa-plus plus-btn" style="color: #ff0000;"></i> {{ __('ui.postAd') }}
+                            <i class="fa-solid fa-plus plus-btn" style="color: #D32F2F;"></i> {{ __('ui.postAd') }}
                         </a>
                     </li>
                     <li>
