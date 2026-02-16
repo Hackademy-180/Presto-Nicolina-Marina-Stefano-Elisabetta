@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\Article;
 use Illuminate\Support\Facades\File;
 use Livewire\WithFileUploads;
-use App\Jobs\RemoveFaces;
+
 
 class CreateArticleForm extends Component
 {
