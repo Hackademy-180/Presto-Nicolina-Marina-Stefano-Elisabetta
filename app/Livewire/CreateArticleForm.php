@@ -52,6 +52,9 @@ class CreateArticleForm extends Component
                     new GoogleVisionLabelImage($newImage->id),
 
                 ])->dispatch($newImage->id);
+                dispatch(new ResizeImage($newImage->path, 1000, 1000));
+                dispatch(new GoogleVisionSafeSearch($newImage->id));
+                dispatch(new GoogleVisionLabelImage($newImage->id));
             }
 
             File::deleteDirectory(storage_path("/app/livewire-tmp"));
