@@ -51,7 +51,7 @@ class ResizeImage implements ShouldQueue
                 paddingX:5,
                 paddingY: 5,
                 paddingUnit: Unit::Percent
-            )
+                            )
             ->save($destPath);
 
    }
