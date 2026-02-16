@@ -55,10 +55,10 @@
             </form>
         </div>
         <div class="d-flex gap-4 mt-2 justify-content-center fidelity-message">
-            <span><i class="fa-solid fa-check" style="color: #2E7D32;"></i> <br>{{ __('ui.overListings') }}</span>
+            <span><i class="fa-solid fa-check" style="color: #2E7D32;"></i> {{ __('ui.overListings') }}</span>
             <span><i class="fa-solid fa-check" style="color: #2E7D32;"></i> {{ __('ui.securePayments') }}</span>
-            <span><i class="fa-solid fa-check" style="color: #2E7D32;"></i> <br> {{ __('ui.dedicatedSupport') }}</span>
-            <span><i class="fa-solid fa-check" style="color: #2E7D32;"></i> <br> {{ __('ui.verifiedCommunity') }}</span>
+            <span><i class="fa-solid fa-check" style="color: #2E7D32;"></i>  {{ __('ui.dedicatedSupport') }}</span>
+            <span><i class="fa-solid fa-check" style="color: #2E7D32;"></i>  {{ __('ui.verifiedCommunity') }}</span>
         </div>
     </header>
     <!-- First section -->
