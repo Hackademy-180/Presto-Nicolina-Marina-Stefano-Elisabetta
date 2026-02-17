@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-xxl navbar-light">
     <div class="container-fluid d-flex flex-column p-0">
-        <div class="d-none d-lg-flex justify-content-center w-100 border-bottom border-1 firstLine">
+        <div class="d-none d-xxl-flex justify-content-center w-100 border-bottom border-1 firstLine">
             <x-_locale lang="it" />
             <x-_locale lang="gb" />
             <x-_locale lang="ru" />
@@ -47,7 +47,7 @@
             </button> -->
 
             <div class="collapse navbar-collapse w-100 d-flex justify-content-end me-4 navbar-custom navbarDrop" id="navbarNavDropdown">
-                <ul class="navbar-nav navbar-mobile d-lg-flex flex-row gap-2 gap-lg-4">
+                <ul class="navbar-nav navbar-mobile d-lg-flex flex-row gap-3 gap-xl-5 me-xl-5">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{{route('home')}}">{{ __('ui.home') }}</a>
                     </li>
@@ -61,10 +61,10 @@
                             <i class="fa-solid fa-plus plus-btn" style="color: #D32F2F;"></i> {{ __('ui.postAd') }}
                         </a>
                     </li>
-                    <li class="d-none d-lg-inline-block">
+                    <li class="d-none d-xl-inline-block">
                         <a class="nav-link" aria-current="page" href="{{route('article_index')}}">{{ __('ui.allArticles') }}</a>
                     </li>
-                    <form action="{{route('logout')}}" method="POST" class="d-none d-lg-inline-block">
+                    <form action="{{route('logout')}}" method="POST" class="d-none d-xl-inline-block">
                         @csrf
                         <button class="btn " type="submit"><i class="fa-solid fa-arrow-right-from-bracket"></i> {{ __('ui.logout') }}</button>
                     </form>
@@ -75,13 +75,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('register')}}">{{ __('ui.signUp') }}</a>
                     </li>
-                    <li class="nav-item d-none d-lg-inline-block">
-                        <a class="nav-link" href="#">{{ __('ui.careers') }}</a>
+                    <li class="nav-item d-none d-xxl-inline-block">
+                        <a class="nav-link" href="{{route('work.with.us')}}">{{ __('ui.careers') }}</a>
                     </li>
                     @endauth
                 </ul>
                 <!-- MOBILE ONLY DROPDOWN -->
-                <ul class="navbar-nav d-lg-none">
+                <ul class="navbar-nav d-xxl-none">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown">
                             {{ __('ui.menu') }}
@@ -152,7 +152,7 @@
                                 <a class="nav-link" aria-current="page" href="{{route('article_index')}}">{{ __('ui.allArticles') }}</a>
                             </li>
                             <li class="ms-3 nav-item">
-                                <a class="nav-link" href="#">{{ __('ui.careers') }}</a>
+                                <a class="nav-link" href="{{route('work.with.us')}}">{{ __('ui.careers') }}</a>
                             </li>
                             @endauth
 

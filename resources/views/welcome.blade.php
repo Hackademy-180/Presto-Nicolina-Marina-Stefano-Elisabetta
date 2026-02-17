@@ -196,7 +196,7 @@
                     <p class="fst-italic text-muted">{{ __('ui.becomeReviewer') }}</p>
                 </div>
                 <div class="section5-btn">
-                    <a href="" class="work-with-us">{{ __('ui.workWithUs') }}</a>
+                    <a href="{{route('work.with.us')}}" class="work-with-us">{{ __('ui.workWithUs') }}</a>
                 </div>
             </div>
         </div>
@@ -240,14 +240,10 @@
 
                 </div>
             </div>
-
             <div class="col-12 col-md-6 d-flex justify-content-center">
 
-                <img src="./media/section7/img7section.png" alt="Immagine sezione 7" class="img-fluid w-50 img7section">
+                <img src="./media/section7/img7section.png" alt="Immagine sezione 7" class="img-fluid img7section">
             </div>
-
-
-
         </div>
     </section>
 

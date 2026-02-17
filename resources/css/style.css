@@ -72,6 +72,8 @@
     background-color: #D32F2F;
     opacity: 0.8;
 }
+/* MEDIA QUERY NAVBAR */
+
 
 @media screen and (max-width:768px) {
     .secondLine {
@@ -120,6 +122,23 @@
 
 
 }
+
+@media screen and (min-width:768px) and (max-width:1150px) {
+   .helloPhrase {
+        display: block;
+    }
+    .plus-btn {
+        display: block;
+    }
+    .inputCreate {
+        width: 200px;
+        text-align: center;
+        height: 50px;
+    }
+    
+   
+}
+
 
 /* Header */
 .row-home {
@@ -192,6 +211,13 @@
         font-size:smaller;
     } */
 
+}
+@media screen and (min-width:768px) and (max-width:1150px) {
+    .fidelity-message{
+        width:720px;
+    }
+
+   
 }
 
 /* First Section */
@@ -355,7 +381,7 @@
 /* Third section */
 
 #carouselExample {
-  overflow: hidden;   /* usato per risolvere problemi di overflow con il carosello */
+  overflow: hidden;   /* usato per risolvere problemi di overflow con il carosello per il media query*/
 }
 
 .col-centered {
@@ -391,6 +417,10 @@
         display:none;
     }
 }
+@media screen and (min-width:768px) and (max-width:1150px) {
+   
+}
+
 
 /* Info Card */
 .categoryBtn {
@@ -689,7 +719,12 @@ a.form-button {
     }
 
 }
+@media screen and (min-width:768px) and (max-width:1150px) {
+    
 
+   
+}
+ 
 /* Fifth section */
 .work-with-us {
     background: #2E7D32;
@@ -741,6 +776,12 @@ a.form-button {
         width: 100%;
     }
 
+}
+@media screen and (min-width:768px) and (max-width:1150px) {
+    .work-with-us{
+        width:200px;
+        text-align: center;
+    }
 }
 
 /* Sixth section */
@@ -803,6 +844,7 @@ a.form-button {
 .img7section {
     transform: translateY(-90px);
     margin-right: 48px;
+    width:50%;
 }
 
 .star {
@@ -821,6 +863,14 @@ a.form-button {
         display: none;
     }
 }
+@media screen and (min-width:768px) and (max-width:1150px) {
+    .img7section{
+        display:block;
+        margin-left:48px;
+        width:75%;
+    }
+}
+
 
 
 /* Footer */

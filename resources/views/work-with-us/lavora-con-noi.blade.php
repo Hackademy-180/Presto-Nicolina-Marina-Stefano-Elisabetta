@@ -72,7 +72,7 @@
             {{-- RIGHT SIDE - FORM --}}
             <article class="col-12 col-md-5 mt-5 registerSection">
 
-                <form method="POST" action="#" enctype="multipart/form-data">
+                <form method="POST" action="{{ route('become.revisor') }}" enctype="multipart/form-data">
                     @csrf
 
                     <div class="mb-3">
