@@ -538,6 +538,16 @@ a.form-button {
     height: 40px;
     border-radius: 5px;
 }
+.modify-button{
+    background: #2E7D32 !important;
+    color:white;
+    width: 120px;
+    border: none;
+    height: 40px;
+    border-radius: 5px;
+    
+    
+}
 
 /* Revisor */
 .btn-cancel-revisor {

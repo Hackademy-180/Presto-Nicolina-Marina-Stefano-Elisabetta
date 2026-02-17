@@ -148,4 +148,40 @@ return
         'workAsReviewer' => 'Lavora come revisore per Noi',
         'prestoForCompanies' => 'Presto per le aziende',
 
+
+        'password' => [
+            'forgetted' => 'Password dimenticata?',
+        ],
+        'recovery' => [
+            'password' => 'Recupera password',
+        ],
+
+        'editArticle' => 'Modifica articolo',
+
+        'auth' => [
+            'reset_link_sent' => 'Ti abbiamo inviato il link per il reset della password.',
+            'forgot_password' => 'Password dimenticata?',
+            'email_label' => 'Email',
+            'back_to_login' => 'Torna al Login',
+            'reset_password_title' => 'Reimposta la tua password',
+            'confirm_password' => 'Conferma Password',
+            'update_password' => 'Aggiorna password',
+        ],
+
+        'mail' => [
+            'reset_password' => [
+                'subject' => 'Reimposta la tua password',
+                'title' => 'Reset Password',
+                'request_message' => 'Hai richiesto il reset della password del tuo account Presto.',
+                'button' => 'Reimposta Password',
+                'expiry_notice' => 'Questo link scadrà tra 60 minuti.',
+                'fallback_text' => 'Se il bottone non funziona, copia e incolla questo link nel browser:',
+                'ignore_notice' => 'Se non hai richiesto il reset, puoi ignorare questa email.',
+                'footer' => '© :year Presto. Tutti i diritti riservati.',
+            ],
+        ],
+
+        'cvAttached' => 'CV allegato a questa email.',
+
+
     ];

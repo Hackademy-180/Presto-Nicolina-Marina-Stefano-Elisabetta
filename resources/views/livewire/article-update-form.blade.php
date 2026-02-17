@@ -1,6 +1,6 @@
 <div>
   @if (session('status'))
-  <div class="alert alert-success text-center">
+  <div class="alert alert-warning text-center">
     {{ session('status') }}
   </div>
   @endif
@@ -34,10 +34,10 @@
 
       <div class="mb-3">
         <input type="file"
-               wire:model="temporary_images"
-               multiple
-               class="form-control shadow @error('temporary_images.*') is-invalid @enderror"
-               placeholder="img/">
+          wire:model="temporary_images"
+          multiple
+          class="form-control shadow @error('temporary_images.*') is-invalid @enderror"
+          placeholder="img/">
         @error('temporary_images.*')
         <p class="fst-italic text-danger">{{ $message }}</p>
         @enderror
@@ -48,11 +48,11 @@
         @foreach ($images as $key => $image)
         <div class="col-6 col-md-4 d-flex flex-column align-items-center my-3">
           <div class="img-preview mx-auto shadow rounded"
-               style="background-image: url({{ $image->temporaryUrl() }});">
+            style="background-image: url({{ $image->temporaryUrl() }});">
           </div>
           <button type="button"
-                  class="btn btn-danger btn-sm mt-2"
-                  wire:click="removeImage({{ $key }})">
+            class="btn btn-danger btn-sm mt-2"
+            wire:click="removeImage({{ $key }})">
             X
           </button>
         </div>
@@ -62,8 +62,8 @@
 
       <div class="mb-3 text-center">
         <select id="category"
-                class="form-select form-select-sm custom-select @error('category') is-invalid @enderror"
-                wire:model="category">
+          class="form-select form-select-sm custom-select @error('category') is-invalid @enderror"
+          wire:model="category">
           <option label disabled>{{ __('ui.chooseCategory') }}</option>
           @foreach ($categories as $category)
           <option value="{{ $category->id }}">{{ $category->name }}</option>
@@ -81,4 +81,3 @@
     </form>
   </div>
 </div>
-

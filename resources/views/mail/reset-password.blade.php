@@ -4,65 +4,69 @@
     <meta charset="UTF-8">
 </head>
 
-<body style="margin:0; padding:0; background:#f4f6f9; font-family: Arial, sans-serif;">
+<body style="margin:0; padding:0; background:#f5f5f5; font-family: Arial, sans-serif;">
 
-    <table width="100%" cellpadding="0" cellspacing="0" style="padding:40px 0; background:#f4f6f9;">
+    <table width="100%" cellpadding="0" cellspacing="0" style="padding:50px 0;">
         <tr>
             <td align="center">
+                <!-- CARD -->
+                <table width="520" cellpadding="0" cellspacing="0"
+                       style="max-width:520px; width:100%; background:#ffffff; border-radius:16px; overflow:hidden; box-shadow:0 8px 25px rgba(0,0,0,0.08);">
 
-                <img src="https://via.placeholder.com/120"
-                     width="120"
-                     style="display:block; margin:0 auto 15px auto;">
-
-                <table width="500" cellpadding="0" cellspacing="0"
-                       style="max-width:500px; width:100%; background:#ffffff; border-radius:12px; overflow:hidden;">
-
+                    <!-- HEADER -->
                     <tr>
-                        <td style="background:#173161; padding:20px; text-align:center;">
-                            <h2 style="color:#ffffff; margin:0;">Reset Password Presto!</h2>
+                        <td style="background:#DF2F2F; padding:25px; text-align:center;">
+                            <h2 style="color:#ffffff; margin:0; font-size:22px;">
+                                {{ __('ui.mail.reset_password.title') }}
+                            </h2>
                         </td>
                     </tr>
 
+                    <!-- CONTENT -->
                     <tr>
-                        <td style="padding:30px; text-align:center; color:#333;">
+                        <td style="padding:35px 30px; text-align:center; color:#333;">
 
-                            <p style="font-size:16px; margin-bottom:20px;">
-                                Hai richiesto il reset della password.
+                            <p style="font-size:16px; margin-bottom:25px;">
+                                {{ __('ui.mail.reset_password.request_message') }}
                             </p>
 
+                            <!-- BUTTON -->
                             <a href="{{ $url }}"
                                style="display:inline-block;
-                                      background:#173161;
+                                      background:#DF2F2F;
                                       color:#ffffff;
-                                      padding:12px 25px;
+                                      padding:14px 30px;
                                       text-decoration:none;
-                                      border-radius:8px;
-                                      font-weight:bold;">
-                                Reset Password
+                                      border-radius:10px;
+                                      font-weight:bold;
+                                      font-size:15px;">
+                                {{ __('ui.mail.reset_password.button') }}
                             </a>
 
-                            <p style="font-size:14px; color:#666; margin-top:20px;">
-                                Questo link scadrà tra 60 minuti.
+                            <p style="font-size:14px; color:#777; margin-top:30px;">
+                                {{ __('ui.mail.reset_password.expiry_notice') }}
                             </p>
 
                         </td>
                     </tr>
 
+                    <!-- DIVIDER -->
                     <tr>
                         <td style="padding:0 30px;">
-                            <hr style="border:none; border-top:1px solid #eee;">
+                            <hr style="border:none; border-top:1px solid #eeeeee;">
                         </td>
                     </tr>
 
+                    <!-- FALLBACK LINK -->
                     <tr>
-                        <td style="padding:20px 30px; text-align:center;">
+                        <td style="padding:25px 30px; text-align:center;">
 
                             <p style="font-size:13px; color:#888;">
-                                Se non riesci a cliccare il bottone, copia e incolla questo link:
+                                {{ __('ui.mail.reset_password.fallback_text') }}
                             </p>
 
                             <p style="word-break:break-all; font-size:13px;">
-                                <a href="{{ $url }}" style="color:#173161;">
+                                <a href="{{ $url }}" style="color:#DF2F2F; text-decoration:none;">
                                     {{ $url }}
                                 </a>
                             </p>
@@ -70,13 +74,19 @@
                         </td>
                     </tr>
 
+                    <!-- FOOTER -->
                     <tr>
                         <td style="padding:20px; text-align:center; font-size:12px; color:#999;">
-                            Se non hai richiesto il reset, ignora questa email.
+                            {{ __('ui.mail.reset_password.ignore_notice') }}
                         </td>
                     </tr>
 
                 </table>
+
+                <!-- SMALL FOOTER -->
+                <p style="font-size:12px; color:#bbb; margin-top:25px;">
+                   {{ __('ui.mail.reset_password.footer', ['year' => date('Y')]) }}
+                </p>
 
             </td>
         </tr>

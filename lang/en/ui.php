@@ -149,6 +149,42 @@ return
         'prestoForCompanies' => 'Presto for Companies',
 
 
+        'password' => [
+            'forgetted' => 'Forgot your password?',
+        ],
+        'recovery' => [
+            'password' => 'Reset password',
+        ],
+
+        'editArticle' => 'Edit article',
+
+        'auth' => [
+            'reset_link_sent' => 'We have emailed your password reset link.',
+            'forgot_password' => 'Forgot your password?',
+            'email_label' => 'Email',
+            'back_to_login' => 'Back to Login',
+            'reset_password_title' => 'Reset your password',
+            'confirm_password' => 'Confirm Password',
+            'update_password' => 'Update password',
+        ],
+
+        'mail' => [
+            'reset_password' => [
+                'subject' => 'Reset your password',
+                'title' => 'Reset Password',
+                'request_message' => 'You requested a password reset for your Presto account.',
+                'button' => 'Reset Password',
+                'expiry_notice' => 'This link will expire in 60 minutes.',
+                'fallback_text' => 'If the button does not work, copy and paste this link into your browser:',
+                'ignore_notice' => 'If you did not request a password reset, you can ignore this email.',
+                'footer' => '© :year Presto. All rights reserved.',
+            ],
+        ],
+
+        'cvAttached' => 'CV attached to this email.',
+
+
+
 
 
 

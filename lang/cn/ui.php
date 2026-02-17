@@ -148,4 +148,41 @@ return
         'workAsReviewer' => '加入我们成为审核员',
         'prestoForCompanies' => 'Presto 企业服务',
 
+        'password' => [
+            'forgetted' => '忘记密码？',
+        ],
+        'recovery' => [
+            'password' => '重置密码',
+        ],
+
+        'editArticle' => '编辑文章',
+
+        'auth' => [
+            'reset_link_sent' => '我们已向您发送密码重置链接。',
+            'forgot_password' => '忘记密码？',
+            'email_label' => '电子邮箱',
+            'back_to_login' => '返回登录',
+            'reset_password_title' => '重置您的密码',
+            'confirm_password' => '确认密码',
+            'update_password' => '更新密码',
+        ],
+        'mail' => [
+            'reset_password' => [
+                'subject' => '重置密码',
+                'title' => '重置密码',
+                'request_message' => '您请求重置 Presto 账户的密码。',
+                'button' => '重置密码',
+                'expiry_notice' => '此链接将在 60 分钟后失效。',
+                'fallback_text' => '如果按钮无法使用，请复制并粘贴此链接到浏览器：',
+                'ignore_notice' => '如果您未请求重置密码，请忽略此邮件。',
+                'footer' => '© :year Presto。保留所有权利。',
+            ],
+        ],
+
+        'cvAttached' => '简历已作为附件添加到此邮件中。',
+
+
+
+
+
     ];
