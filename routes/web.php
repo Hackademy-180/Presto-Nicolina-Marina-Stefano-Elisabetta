@@ -4,15 +4,10 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\PublicController;
 use App\Http\Controllers\RevisorController;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Facades\Route;
 
 
-use App\Models\User;
-use Illuminate\Auth\Events\PasswordReset;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Str;
+
 
 Route::get('/', [PublicController::class, "home"])->name('home');
 
@@ -49,3 +44,7 @@ Route::post('/lingua/{lang}', [PublicController::class, 'setLanguage'])->name('s
 
 // Lavora con noi
 Route::view('/work-with-us', 'work-with-us.lavora-con-noi')->name('work.with.us');
+
+// Route::patch('/reject/revisor/{user}', [RevisorController::class, 'rejectRevisor'])->name('reject.revisor');
+
+

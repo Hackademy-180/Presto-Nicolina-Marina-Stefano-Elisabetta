@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Models;
-use Illuminate\Contracts\Auth\MustVerifyEmail;
+
 
 use App\Notifications\ResetPasswordNotification;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -24,6 +24,8 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        // "is_revisor",
+        
     ];
 
     /**
