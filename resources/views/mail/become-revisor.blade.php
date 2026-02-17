@@ -1,22 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>{{ __('ui.workRequestMessage') }}</title>
 </head>
 
 <body>
-    <div>
-        <h1 class="text-center">{{ __('ui.workRequestMessage') }}</h1>
-        <h2>{{ __('ui.userDetailsLabel') }}</h2>
-        <p>{{ __('ui.firstName') }}: {{$user->name}} </p>
-        <p>{{ __('ui.emailLabel') }}:{{$user->email}} </p>
-        <p>{{ __('ui.makeRevisor', ['name' => $user->name]) }}</p>
-        <a href="{{ route('make.revisor', compact ('user'))}}">{{ __('ui.grantRevisorRole') }}</a>
-    </div>
-    
-</body>
 
+<div class="mail-wrapper">
+
+    <div class="mail-header">
+        <h1>{{ __('ui.workRequestMessage') }}</h1>
+    </div>
+
+    <div class="mail-content">
+
+        <h2>{{ __('ui.userDetailsLabel') }}</h2>
+
+        <div class="mail-box">
+            <p><strong>{{ __('ui.firstName') }}:</strong> {{ $name }}</p>
+            <p><strong>{{ __('ui.emailLabel') }}:</strong> {{ $email }}</p>
+        </div>
+
+        <p>{{ __('ui.makeRevisor', ['name' => $name]) }}</p>
+
+        @if($user)
+            <a href="{{ route('make.revisor', $user) }}" class="mail-button">
+                {{ __('ui.grantRevisorRole') }}
+            </a>
+        @endif
+
+        <div class="mail-footer">
+            CV allegato a questa email.
+        </div>
+
+    </div>
+
+</div>
+
+</body>
 </html>

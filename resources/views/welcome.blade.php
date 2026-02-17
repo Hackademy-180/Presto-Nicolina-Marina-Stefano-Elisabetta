@@ -13,8 +13,8 @@
     <header class="container-fluid text-center">
         <div class="row row-home ">
             <form action="{{route('article.search')}}" method="GET">
-                <div class="d-flex inputSearch justify-content-center mt-5 h-75">
-                    <div class="col-12 col-md-7 headerForm d-flex justify-content-center align-items-center">
+                <div class="d-flex inputSearch justify-content-center">
+                    <div class="col-12 col-xl-7 headerForm d-flex justify-content-center align-items-center py-3 mt-5">
                         <div class="d-flex flex-column align-items-center ">
                             <p class="fw-bold m-0">{{ __('ui.whatSearch') }}</p>
                             <input class="form-control me-2 searchBar" type="search" placeholder="{{ __('ui.search') }}" aria-label="Search" name="query" />
@@ -47,47 +47,49 @@
                             <p class="fw-bold m-0">{{ __('ui.where') }}</p>
                             <input class="form-control me-2" type="search" placeholder="{{ __('ui.allItaly') }}" aria-label="Search" name="location" />
                         </div>
-                        <div class="h-50 ms-3 search-btn-wrapper">
+                        <div class=" ms-3 search-btn-wrapper">
                             <button type="submit" class="btnSearch text-white"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
                         </div>
                     </div>
                 </div>
             </form>
         </div>
-        <div class="d-none d-md-flex gap-4 mt-2 justify-content-center fidelity-message">
-            <span class="font-message"><i class="fa-solid fa-check" style="color: #2E7D32;"></i> {{ __('ui.overListings') }}</span>
-            <span class="font-message"><i class="fa-solid fa-check" style="color: #2E7D32;"></i> {{ __('ui.securePayments') }}</span>
-            <span class="font-message"><i class="fa-solid fa-check" style="color: #2E7D32;"></i>  {{ __('ui.dedicatedSupport') }}</span>
-            <span class="font-message"><i class="fa-solid fa-check" style="color: #2E7D32;"></i>  {{ __('ui.verifiedCommunity') }}</span>
+        <div class="row">
+            <div class="d-none d-md-flex gap-4 mt-2 justify-content-center fidelity-message">
+                <span class="font-message"><i class="fa-solid fa-check" style="color: #2E7D32;"></i> {{ __('ui.overListings') }}</span>
+                <span class="font-message"><i class="fa-solid fa-check" style="color: #2E7D32;"></i> {{ __('ui.securePayments') }}</span>
+                <span class="font-message"><i class="fa-solid fa-check" style="color: #2E7D32;"></i> {{ __('ui.dedicatedSupport') }}</span>
+                <span class="font-message"><i class="fa-solid fa-check" style="color: #2E7D32;"></i> {{ __('ui.verifiedCommunity') }}</span>
+            </div>
         </div>
     </header>
     <!-- First section -->
     <section class="container">
-        <div class="row firstSection align-items-center mx-auto">
-            <div class="col-12 d-flex justify-content-around mt-5 gap-3">
-                <div class="iconTransport w-25 d-flex justify-content-center align-items-center">
-                    <div class="iconDiv d-flex align-items-center justify-content-around gap-2 gap-lg-5 transport">
+        <div class="row firstSection align-items-center">
+            <div class="col-12 d-flex justify-content-center gap-5 mt-5 ">
+                <div class="iconTransport w-20 d-flex flex-column flex-md-row justify-content-center gap-3 align-items-center">
+                    <div class="iconDiv d-flex align-items-center justify-content-center transport">
                         <img src="./media/transport.png" alt="car" class="imgFirstSection">
-                        <h5 class="titleTransport fw-bold">{{ __('ui.engine') }}</h5>
                     </div>
+                    <h5 class="titleTransport fw-bold">{{ __('ui.engine') }}</h5>
                 </div>
-                <div class="iconArmchair  w-25 d-flex justify-content-center align-items-center">
-                    <div class="iconDiv d-flex align-items-center justify-content-around gap-2 gap-lg-5 armchair">
+                <div class="iconArmchair w-20 d-flex flex-column flex-md-row justify-content-center gap-3 align-items-center">
+                    <div class="iconDiv d-flex align-items-center justify-content-center armchair">
                         <img src="./media/armchair.png" alt="armchair" class="imgFirstSection ">
-                        <h5 class="titleArmchair fw-bold">{{ __('ui.market') }}</h5>
                     </div>
+                    <h5 class="titleArmchair fw-bold">{{ __('ui.market') }}</h5>
                 </div>
-                <div class="iconBuilding w-25 d-flex justify-content-center align-items-center">
-                    <div class="iconDiv d-flex align-items-center justify-content-around gap-2 gap-lg-5 building">
+                <div class="iconBuilding w-20 d-flex flex-column flex-md-row justify-content-center gap-3 align-items-center">
+                    <div class="iconDiv d-flex align-items-center justify-content-center building">
                         <img src="./media/skyline.png" alt="building" class="imgFirstSection">
-                        <h5 class="fw-bold titleBuilding">{{ __('ui.property') }}</h5>
                     </div>
+                    <h5 class="fw-bold titleBuilding">{{ __('ui.property') }}</h5>
                 </div>
-                <div class="iconBriefcase w-25 d-flex justify-content-center align-items-center">
-                    <div class="iconDiv d-flex align-items-center justify-content-around gap-2 gap-lg-5 briefcase">
+                <div class="iconBriefcase w-20 d-flex flex-column flex-md-row justify-content-center gap-3 align-items-center">
+                    <div class="iconDiv d-flex align-items-center justify-content-center briefcase">
                         <img src="./media/briefcase.png" alt="briefcase" class="imgFirstSection">
-                        <h5 class="fw-bold titleBriefcase">{{ __('ui.work') }}</h5>
                     </div>
+                    <h5 class="fw-bold titleBriefcase">{{ __('ui.work') }}</h5>
                 </div>
             </div>
         </div>
@@ -124,20 +126,17 @@
     </section>
     <!-- Third section -->
     <section class="container mt-5">
-        <div class="row">
+        <div class="row row-section3">
             <div class="col-md-10 col-centered ">
-                <h3 class="fw-semibold">{{ __('ui.highlighted_for_you') }}</h3>
+                <h3 class="fw-semibold title-section3">{{ __('ui.highlighted_for_you') }}</h3>
 
                 <div id="carouselExample" class="carousel slide mt-4" data-ride="carousel" data-bs-interval="2500">
                     <div class="carousel-inner">
                         @foreach($articles->chunk(4) as $slideindex => $chunk)
                         <div class="carousel-item {{ $slideindex === 0 ? 'active' : '' }}">
-                            <div class="row g-3">
-
+                            <div class="d-flex  justify-content-center align-items-center gap-2">
                                 @foreach($chunk as $article)
-                                <div class="col-12 col-md-6 col-xl-3">
-                                    <x-card :article="$article" />
-                                </div>
+                                <x-card :article="$article" />
                                 @endforeach
                             </div>
 
@@ -224,7 +223,7 @@
                     <h5 class="fw-bold text-white mb-5">{{ __('ui.downloadApp') }}</h5>
                     <img src="./media/section7/qr-code.png" alt="Immagine sezione 7" class="qr-code">
                 </div>
-                <div class="d-flex justify-content-center align-items-centerbg-warning gap-4 mt-5 ms-4">
+                <div class="d-flex justify-content-center align-items-center gap-4 mt-5 ms-4">
                     <div class="d-flex flex-column">
                         <img src="./media/section7/stars.png" alt="Immagine sezione 7" class="img-fluid star">
                         <span class="text-white fw-bold">4.7 <i class="fa-brands fa-apple"></i> {{ __('ui.appStore') }}</span>

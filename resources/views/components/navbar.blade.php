@@ -61,7 +61,7 @@
                             <i class="fa-solid fa-plus plus-btn" style="color: #D32F2F;"></i> {{ __('ui.postAd') }}
                         </a>
                     </li>
-                    <li class="d-none d-xl-inline-block">
+                    <li class="d-none d-xl-inline-block ">
                         <a class="nav-link" aria-current="page" href="{{route('article_index')}}">{{ __('ui.allArticles') }}</a>
                     </li>
                     <form action="{{route('logout')}}" method="POST" class="d-none d-xl-inline-block">
@@ -81,7 +81,7 @@
                     @endauth
                 </ul>
                 <!-- MOBILE ONLY DROPDOWN -->
-                <ul class="navbar-nav d-xxl-none">
+                <ul class="navbar-nav d-xxl-none ms-3 ms-md-4">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown">
                             {{ __('ui.menu') }}

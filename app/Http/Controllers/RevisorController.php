@@ -53,10 +53,30 @@ class RevisorController extends Controller
     }
     // fine prova unDo
 
-    public function becomeRevisor(){
-        Mail::to('admin@presto.it')->send(new becomeRevisor(Auth::user()));
-        return redirect()->route('home')->with('message','Complimenti,hai richiesto di diventare revisor');
-        
+   public function becomeRevisor(Request $request)
+   {
+      $request->validate([
+        'name' => 'required|string|max:255',
+        'email' => 'required|email',
+        'message' => 'required|string',
+        'cv' => 'required|mimes:pdf,doc,docx|max:2048',
+      ]);
+
+      $cvPath = $request->file('cv')->store('cv', 'public');
+      $user = User::where('email', $request->email)->first();
+
+     Mail::to('admin@presto.it')->send(
+        new BecomeRevisor(
+            name: $request->name,
+            email: $request->email,
+            messageText: $request->message,
+            cvPath: $cvPath,
+            user: $user
+        )
+      );
+
+      return redirect()->route('home')
+        ->with('message','Complimenti, hai richiesto di diventare revisor');
     }
     public function makeRevisor(User $user)
     {

@@ -1,4 +1,11 @@
 <x-layout>
+   @if (session('message'))
+    <div class="container mt-3">
+        <div class="alert alert-success text-center col-md-6 mx-auto">
+            {{ session('message') }}
+        </div>
+    </div>
+    @endif
     
     {{-- HERO SLIDER --}}
     <section class="hero-work">
@@ -8,18 +15,18 @@
             <div class="carousel-inner">
                 
                 <div class="carousel-item active">
-                    <div class="hero-slide" style="background-image: url('{{ asset('media/work/slider-1.jpg') }}')"></div>
+                    <div class="hero-slide imgSlide1"></div>
                 </div>
                 
                 <div class="carousel-item">
-                    <div class="hero-slide" style="background-image: url('{{ asset('media/work/slider-2.jpg') }}')"></div>
+                    <div class="hero-slide imgSlide2"></div>
                 </div>
                 
                 <div class="carousel-item">
-                    <div class="hero-slide" style="background-image: url('{{ asset('media/work/slider-3.jpg') }}')"></div>
+                    <div class="hero-slide imgSlide3"></div>
                 </div>
                 <div class="carousel-item">
-                    <div class="hero-slide" style="background-image: url('{{ asset('media/work/slider-4.jpg') }}')"></div>
+                    <div class="hero-slide imgSlide4"></div>
                 </div>
                 
             </div>
@@ -53,7 +60,7 @@
                     
                     <div class="sidebar-item d-flex align-items-start mb-3">
                         <div class="me-3 sidebar-icon">
-                            <img src="{{ asset('media/register/casa.png') }}" alt="Icon" >
+                            <img src="media/register/casa.png" alt="Icon" >
                         </div>
                         <div>
                             <p class="mb-1"><strong>Smartworking</strong></p>
@@ -65,7 +72,7 @@
                     
                     <div class="sidebar-item d-flex align-items-start mb-3">
                         <div class="me-3 sidebar-icon">
-                            <img src="{{ asset('media/register/orologio.png') }}" alt="Icon">
+                            <img src="media/register/orologio.png" alt="Icon">
                         </div>
                         <div>
                             <p class="mb-1"><strong>Flessibilità oraria</strong></p>
@@ -77,7 +84,7 @@
                     
                     <div class="sidebar-item d-flex align-items-start mb-3">
                         <div class="me-3 sidebar-icon">
-                            <img src="{{ asset('media/register/smile.png') }}" alt="Icon">
+                            <img src="media/register/smile.png" alt="Icon">
                         </div>
                         <div>
                             <p class="mb-1"><strong>Bonus “Presenta un Amico”</strong></p>
@@ -89,7 +96,7 @@
                     
                     <div class="sidebar-item d-flex align-items-start">
                         <div class="me-3 sidebar-icon">
-                            <img src="{{ asset('media/register/stella.png') }}" alt="Icon">
+                            <img src="media/register/stella.png" alt="Icon">
                         </div>
                         <div>
                             <p class="mb-1"><strong>Welcome on board</strong></p>
@@ -105,7 +112,7 @@
                 {{-- RIGHT SIDE - FORM --}}
                 <article class="col-12 col-md-5 mt-5 registerSection">
                     
-                    <form method="POST" action="#" enctype="multipart/form-data">
+                    <form method="POST" action="{{ route('become.revisor') }}" enctype="multipart/form-data">
                         @csrf
                         
                         <div class="mb-3">
