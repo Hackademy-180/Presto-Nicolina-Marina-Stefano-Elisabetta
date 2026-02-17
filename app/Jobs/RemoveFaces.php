@@ -69,11 +69,14 @@ class RemoveFaces implements ShouldQueue
             foreach($vertices as $vertex){
                 $bounds[] = [$vertex->getX(),$vertex->getY()];
             }
+
             $w =$bounds[2][0] - $bounds[0][0];
             $h =$bounds[2][1] - $bounds[0][1];
+
              $image=SpatieImage::load($src);
+
              $image->watermark(
-                base_path('resources/img/face.png'),
+                base_path('resources/img/face.jpg'),
                 AlignPosition::TopLeft,
                 paddingX:$bounds[0][0],
                 paddingY:$bounds[0][1],
