@@ -64,5 +64,13 @@ class RevisorController extends Controller
         return redirect()->back();
     }
 
+//     public function rejectRevisor(User $user)
+// {
+//     // dd("sono dentro");
+//     $user->is_revisor = false; 
+//     $user->save();
+
+//     return redirect()->back()->with('message', 'Richiesta rifiutata con successo.');
+// }
     
 }
