@@ -916,3 +916,13 @@ a.form-button {
         background-color: white;
     }
 }
+
+/* Media Query Work with us */
+@media (max-width: 768px) {
+    .registerSection{
+        margin-right:48px;
+    }
+    .sidebar-register{
+        margin-left:48px;
+    }
+}

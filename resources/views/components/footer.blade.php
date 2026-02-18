@@ -110,11 +110,6 @@
               <a class="text-body" href="#!">{{ __('ui.shopsAndCompanies') }}</a>
             </li>
             <li>
-              <a class="text-body" href="{{route('become.revisor')}} ">{{ __('ui.workAsReviewer') }}</a>
-              
-            </li>
-
-            <li>
               <a class="text-body" href="#!">{{ __('ui.prestoForCompanies') }}</a>
             </li>
           </ul>

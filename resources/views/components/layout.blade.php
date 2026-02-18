@@ -14,7 +14,7 @@
 
     <x-navbar />
 
-    <div class="main-container flex-1">
+    <div class="main-container flex-1 d-flex flex-column align-items-center">
 
         {{$slot}}
     </div>

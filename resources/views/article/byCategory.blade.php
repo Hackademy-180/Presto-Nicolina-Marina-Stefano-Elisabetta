@@ -14,7 +14,7 @@
                 <div class="col-12 text-center">
                     <h3>{{ __('ui.noListings') }}</h3>
                     @auth
-                        <a href="{{route("article_create")}}" class="btn btn-dark my-5">{{ __('ui.postAd') }}</a>
+                        <a href="{{route("article_create")}}" class="form-button my-5">{{ __('ui.postAd') }}</a>
                     @endauth
                 </div>
             @endforelse
